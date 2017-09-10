@@ -14,26 +14,19 @@ protocol VMDelegate2:class{
 }
 
 class ViewModel2 {
-    
-    var cardProducts:[Product]?
-    
-    var token:String?
-    var passingArray:[[String]] = []
-    let prequalificationUrl:String = "https://api-sandbox.capitalone.com/credit-offers/prequalifications"
-    
     weak var secondViewController:VMDelegate2?
     
     init(delegate2:VMDelegate2? = nil){
         self.secondViewController = delegate2
     }
+    let prequalificationUrl:String = "https://api-sandbox.capitalone.com/credit-offers/prequalifications"
     
     func getUserInfo(url: String, taxId:Int) {
         Networking.getToken(url: url){
             [unowned self] (error, data) in
             guard error == nil else {return}
-            guard data != nil else {return}
-            self.token = data
-            Networking.getPrequalification(url: self.prequalificationUrl, token: self.token!, taxId: taxId){
+            guard let token = data else {return}
+            Networking.getPrequalification(url: self.prequalificationUrl, token: token, taxId: taxId){
                 [unowned self] (error, data) in
                 if let error = error {
                     print(error.localizedDescription)

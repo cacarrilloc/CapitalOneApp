@@ -14,26 +14,19 @@ protocol VMDelegate4:class{
 }
 
 class ViewModel4 {
-    
-    var cardProducts:[Product]?
-    
-    var token:String?
-    var passingArray:[[String]] = []
-    let prequalificationUrl:String = "https://api-sandbox.capitalone.com/credit-offers/prequalifications"
-    
     weak var fourthViewController:VMDelegate4?
     
     init(delegate4:VMDelegate4? = nil){
         self.fourthViewController = delegate4
     }
+    let prequalificationUrl:String = "https://api-sandbox.capitalone.com/credit-offers/prequalifications"
     
     func getUserInfo(url: String, taxId:Int) {
         Networking.getToken(url: url){
             [unowned self] (error, data) in
             guard error == nil else {return}
-            guard data != nil else {return}
-            self.token = data
-            Networking.getPrequalification(url: self.prequalificationUrl, token: self.token!, taxId: taxId){
+            guard let token = data else {return}
+            Networking.getPrequalification(url: self.prequalificationUrl, token: token, taxId: taxId){
                 [unowned self] (error, data) in
                 if let error = error {
                     print(error.localizedDescription)
@@ -45,7 +38,7 @@ class ViewModel4 {
                     guard let results = dict["products"] as? [[String:Any]] else {return}
                     let products:[Product] = results.flatMap{ try? Product(dict: $0)}
                     self.fourthViewController?.passQualifications(array: products)
-        
+                    
                 } catch let error {
                     print(error.localizedDescription)
                 }
