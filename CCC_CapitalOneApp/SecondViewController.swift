@@ -15,9 +15,8 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var myCapitalImage: UIImageView!
     @IBOutlet weak var myButton: UIButton!
     
-    let taxId:Int = 666666666
-    
     lazy var secondViewModel:ViewModel2 = ViewModel2(delegate2: self)
+    let taxId:Int = 666666666
     
     override func viewDidLoad() {
         super.viewDidLoad()

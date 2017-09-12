@@ -26,7 +26,8 @@ class SVC2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SVCViewModel2.getMasterArray(array: passArray!)
+        guard let array = passArray else {return}
+        SVCViewModel2.getMasterArray(array: array)
         let bundle = Bundle(for: CustomTableViewCell.self)
         let nib = UINib(nibName: "CustomeViewCell", bundle: bundle)
         self.myTableView.register(nib, forCellReuseIdentifier: "CustomCell")

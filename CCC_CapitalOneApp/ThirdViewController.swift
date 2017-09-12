@@ -15,9 +15,8 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var myCapitalImage: UIImageView!
     @IBOutlet weak var myButton: UIButton!
     
-    let taxId:Int = 777777777
-    
     lazy var thirdViewModel:ViewModel3 = ViewModel3(delegate3: self)
+    let taxId:Int = 777777777
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,7 +16,6 @@ protocol VMDelegate10:class{
 class TVCModel4 {
     
     weak var TVCModelViewController4:VMDelegate10?
-    var masterArray:[Product]?
     
     init(delegateTVCModel4:VMDelegate10? = nil){
         self.TVCModelViewController4 = delegateTVCModel4
@@ -30,5 +29,4 @@ class TVCModel4 {
             self.TVCModelViewController4?.updateImage(image: dataIn)
         }
     }
-    
 }

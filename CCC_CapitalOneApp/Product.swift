@@ -35,7 +35,7 @@ class Product {
     
     let displayName:String
     var images:[ProductImage]?
-    var description:MarketingCopy
+    let description:MarketingCopy
     
     init(dict:[String:Any])throws {
         guard let dispName = dict["productDisplayName"] as? String else {

@@ -16,7 +16,6 @@ protocol VMDelegate9:class{
 class TVCModel3 {
     
     weak var TVCModelViewController3:VMDelegate9?
-    var masterArray:[Product]?
     
     init(delegateTVCModel3:VMDelegate9? = nil){
         self.TVCModelViewController3 = delegateTVCModel3
