@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol VMDelegate7:class{
-    func updateTableView()
+    func updateTableView(image: UIImage)
 }
 
 class SVCModel4 {
@@ -43,11 +43,24 @@ class SVCModel4 {
         return desc[index]
     }
     
-    func getImage(index:Int) -> String {
+    func getImageUrl(index:Int) -> String {
         guard let array = masterArray else {return "ERROR"}
         let image = array.flatMap{$0.images?[0].url}
         return image[index]
     }
     
+    func getImage(urlIndex:Int) {
+        let url = getImageUrl(index: urlIndex)
+        if let image = ImageCache.shared.cache.object(forKey: url as NSString){
+            self.SVCModelViewController4?.updateTableView(image: image)
+        } else {
+            Networking.getImage(url: url){
+                [unowned self] (error, data) in
+                guard error == nil else {return}
+                guard let dataIn = data else {return}
+                self.SVCModelViewController4?.updateTableView(image: dataIn)
+            }
+        }
+    }
 }
 

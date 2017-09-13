@@ -18,11 +18,11 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     lazy var SVCViewModel4:SVCModel4 = SVCModel4(delegateSVCModel4: self)
     
-    var passArray:[Product]?
     var nameToPass:String?
     var descToPass:String?
     var imageToPass:String?
-    let images = [#imageLiteral(resourceName: "card1"), #imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card1")]
+    var passArray:[Product]?
+    var currentImage:UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,15 +45,18 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
+        
+        SVCViewModel4.getImage(urlIndex: indexPath.row) // Download Image from API Call
         let name = SVCViewModel4.getName(index: indexPath.row)
-        cell.fillCell(with: name, image: images[indexPath.row])
+        guard let imageIn = currentImage else {return cell} // Receive Image
+        cell.fillCell(with: name, image: imageIn)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Get Values to be passed
         nameToPass = SVCViewModel4.getName(index: indexPath.row)
-        imageToPass = SVCViewModel4.getImage(index: indexPath.row)
+        imageToPass = SVCViewModel4.getImageUrl(index: indexPath.row)
         descToPass = SVCViewModel4.getDescription(index: indexPath.row)
         performSegue(withIdentifier: "mySegue", sender: self)
     }
@@ -62,9 +65,9 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if (segue.identifier == "mySegue") {
             // Initialize new view controller with desired target
             let viewController = segue.destination as! TVC4
-            viewController.passedName = nameToPass   // Pass Values
-            viewController.passedDesc = descToPass   // Pass Values
-            viewController.passedImage = imageToPass // Pass Values
+            viewController.passedName = nameToPass   // Pass Values to target
+            viewController.passedDesc = descToPass   // Pass Values to target
+            viewController.passedImage = imageToPass // Pass Values to target
         }
     }
     
@@ -74,8 +77,9 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
 }
 
 extension SVC4:VMDelegate7{
-    func updateTableView() {
+    func updateTableView(image: UIImage) {
         DispatchQueue.main.async {
+            self.currentImage = image
             self.myTableView.reloadData()
         }
     }
