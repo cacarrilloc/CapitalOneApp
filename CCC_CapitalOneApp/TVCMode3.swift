@@ -22,12 +22,15 @@ class TVCModel3 {
     }
     
     func getImage(url:String) {
-        Networking.getImage(url: url){
-            [unowned self] (error, data) in
-            guard error == nil else {return}
-            guard let dataIn = data else {return}
-            self.TVCModelViewController3?.updateImage(image: dataIn)
+        if let image = ImageCache.shared.cache.object(forKey: url as NSString){
+            self.TVCModelViewController3?.updateImage(image: image)
+        } else {
+            Networking.getImage(url: url){
+                [unowned self] (error, data) in
+                guard error == nil else {return}
+                guard let dataIn = data else {return}
+                self.TVCModelViewController3?.updateImage(image: dataIn)
+            }
         }
     }
-    
 }
