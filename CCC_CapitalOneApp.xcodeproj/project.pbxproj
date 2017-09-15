@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4DC4EF1DB00DA0AB1A1735FC /* Pods_CCC_CapitalOneAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FFF49DF371EFDCE90DD197 /* Pods_CCC_CapitalOneAppTests.framework */; };
 		6CC86CBA4E122F9B3098E308 /* Pods_CCC_CapitalOneAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B74D7BBBF81985349E7F88 /* Pods_CCC_CapitalOneAppUITests.framework */; };
+		A1001D7E1F69FB36004AD793 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001D791F69FB36004AD793 /* UIButtonX.swift */; };
+		A1001D7F1F69FB36004AD793 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001D7A1F69FB36004AD793 /* UIImageViewX.swift */; };
+		A1001D801F69FB36004AD793 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001D7B1F69FB36004AD793 /* UILabelX.swift */; };
+		A1001D811F69FB36004AD793 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001D7C1F69FB36004AD793 /* UITextFieldX.swift */; };
 		A102E6541F5918C4003EBAA2 /* TVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102E6531F5918C4003EBAA2 /* TVC3.swift */; };
 		A102E6561F5918E8003EBAA2 /* TVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102E6551F5918E8003EBAA2 /* TVC2.swift */; };
 		A124004F1F51FF6A005F9FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124004E1F51FF6A005F9FE0 /* AppDelegate.swift */; };
@@ -72,6 +76,10 @@
 		67FFF49DF371EFDCE90DD197 /* Pods_CCC_CapitalOneAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCC_CapitalOneAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C30070189E41FC9CA9E275 /* Pods-CCC_CapitalOneAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCC_CapitalOneAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCC_CapitalOneAppTests/Pods-CCC_CapitalOneAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		802398801588D16F09471E7C /* Pods-CCC_CapitalOneAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCC_CapitalOneAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCC_CapitalOneAppUITests/Pods-CCC_CapitalOneAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1001D791F69FB36004AD793 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		A1001D7A1F69FB36004AD793 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		A1001D7B1F69FB36004AD793 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		A1001D7C1F69FB36004AD793 /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
 		A102E6531F5918C4003EBAA2 /* TVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVC3.swift; sourceTree = "<group>"; };
 		A102E6551F5918E8003EBAA2 /* TVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVC2.swift; sourceTree = "<group>"; };
 		A124004B1F51FF6A005F9FE0 /* CCC_CapitalOneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCC_CapitalOneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +164,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A1001D781F69FA9D004AD793 /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				A1001D791F69FB36004AD793 /* UIButtonX.swift */,
+				A1001D7A1F69FB36004AD793 /* UIImageViewX.swift */,
+				A1001D7B1F69FB36004AD793 /* UILabelX.swift */,
+				A1001D7C1F69FB36004AD793 /* UITextFieldX.swift */,
+			);
+			name = Designable;
+			sourceTree = "<group>";
+		};
 		A12400421F51FF69005F9FE0 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +230,7 @@
 		A124007F1F51FF93005F9FE0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1001D781F69FA9D004AD793 /* Designable */,
 				A12400521F51FF6A005F9FE0 /* Main.storyboard */,
 				A1F5044D1F6391DD0028A2A8 /* CustomeViewCell.xib */,
 				A124005A1F51FF6A005F9FE0 /* LaunchScreen.storyboard */,
@@ -633,12 +653,14 @@
 				A1B821831F55FCE3006A03AF /* Cache.swift in Sources */,
 				A1ED57161F545DE5000AA30A /* Product.swift in Sources */,
 				A16BA61E1F56693D00996A9D /* SVC2.swift in Sources */,
+				A1001D801F69FB36004AD793 /* UILabelX.swift in Sources */,
 				A1ED570C1F537A15000AA30A /* FirstViewModel.swift in Sources */,
 				A102E6541F5918C4003EBAA2 /* TVC3.swift in Sources */,
 				A12400571F51FF6A005F9FE0 /* CCC_CapitalOneApp.xcdatamodeld in Sources */,
 				A12400881F527B1D005F9FE0 /* PageViewController.swift in Sources */,
 				A16BA6221F5669AE00996A9D /* TVC4.swift in Sources */,
 				A1F5044C1F6391CA0028A2A8 /* CustomTableViewCell.swift in Sources */,
+				A1001D811F69FB36004AD793 /* UITextFieldX.swift in Sources */,
 				A1ED57071F5363EA000AA30A /* FourthViewController.swift in Sources */,
 				A1F504401F631C630028A2A8 /* SVCModel2.swift in Sources */,
 				A1C2C51B1F57F10700584A1A /* SVC4.swift in Sources */,
@@ -648,6 +670,8 @@
 				A1ED57101F537A38000AA30A /* ThirdViewModel.swift in Sources */,
 				A1F504461F6338E50028A2A8 /* TVCModel2.swift in Sources */,
 				A1F504481F6338F40028A2A8 /* TVCMode3.swift in Sources */,
+				A1001D7E1F69FB36004AD793 /* UIButtonX.swift in Sources */,
+				A1001D7F1F69FB36004AD793 /* UIImageViewX.swift in Sources */,
 				A16BA6201F56696200996A9D /* SVC3.swift in Sources */,
 				A1F504421F631C7D0028A2A8 /* SVCModel3.swift in Sources */,
 				A1ED57031F5363C7000AA30A /* SecondViewController.swift in Sources */,
