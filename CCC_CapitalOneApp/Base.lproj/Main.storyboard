@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F2t-mM-h8x" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="191" width="243" height="227"/>
+                                <rect key="frame" x="66" y="195" width="243" height="227"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="JoU-oZ-jow"/>
@@ -133,7 +133,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Badcredit Rodgers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-AT-z6t" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="449" width="243" height="38"/>
+                                <rect key="frame" x="66" y="453" width="243" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="xmf-on-TMj"/>
                                 </constraints>
@@ -153,7 +153,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVU-j6-7js" customClass="UIButtonX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="532" width="243" height="30"/>
+                                <rect key="frame" x="66" y="536" width="243" height="30"/>
                                 <color key="backgroundColor" red="0.20748960969999999" green="0.76219296459999997" blue="0.08232159168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Check Prequalifications">
@@ -170,10 +170,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-hM-obP" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="104" width="243" height="79"/>
+                                <rect key="frame" x="66" y="83" width="243" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="lm3-PK-UOp"/>
+                                    <constraint firstAttribute="height" constant="104" id="lm3-PK-UOp"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="qL3-S9-Bsc"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -197,7 +197,7 @@
                             <constraint firstItem="cVU-j6-7js" firstAttribute="trailing" secondItem="9L9-AT-z6t" secondAttribute="trailing" id="PzN-ZU-lXq"/>
                             <constraint firstItem="cVU-j6-7js" firstAttribute="leading" secondItem="9L9-AT-z6t" secondAttribute="leading" id="STz-JH-gWA"/>
                             <constraint firstItem="T1C-hM-obP" firstAttribute="centerX" secondItem="F2t-mM-h8x" secondAttribute="centerX" id="eia-U0-hnT"/>
-                            <constraint firstItem="F2t-mM-h8x" firstAttribute="top" secondItem="wrG-Yy-8Lm" secondAttribute="top" constant="191" id="gsp-cs-BtW"/>
+                            <constraint firstItem="F2t-mM-h8x" firstAttribute="top" secondItem="wrG-Yy-8Lm" secondAttribute="top" constant="195" id="gsp-cs-BtW"/>
                             <constraint firstItem="F2t-mM-h8x" firstAttribute="top" secondItem="T1C-hM-obP" secondAttribute="bottom" constant="8" symbolic="YES" id="jCC-jB-DKx"/>
                             <constraint firstItem="F2t-mM-h8x" firstAttribute="centerX" secondItem="wrG-Yy-8Lm" secondAttribute="centerX" id="l5D-60-itT"/>
                             <constraint firstItem="F2t-mM-h8x" firstAttribute="leading" secondItem="wrG-Yy-8Lm" secondAttribute="leadingMargin" constant="50" id="pAK-E4-6oz"/>
@@ -228,7 +228,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tz9-3N-Qgp" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="191" width="243" height="227"/>
+                                <rect key="frame" x="66" y="204" width="243" height="227"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="zHd-Kx-kxr"/>
@@ -246,7 +246,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Bestcredit Carrillo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjY-GP-QZ4" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="449" width="243" height="38"/>
+                                <rect key="frame" x="66" y="462" width="243" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="mjv-ow-Ynt"/>
                                 </constraints>
@@ -266,7 +266,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-II-CUr" customClass="UIButtonX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="532" width="243" height="30"/>
+                                <rect key="frame" x="66" y="545" width="243" height="30"/>
                                 <color key="backgroundColor" red="0.20748960969999999" green="0.76219296459999997" blue="0.08232159168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Check Prequalifications">
@@ -281,12 +281,12 @@
                                     <action selector="inputButtonWithSender:" destination="BF6-Kk-EhZ" eventType="touchUpInside" id="cpq-FE-Dl1"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A3U-XZ-jDx" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="104" width="243" height="79"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ady-oM-hzV" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="66" y="92" width="243" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="7DJ-29-3T3"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="OTd-He-Gva"/>
+                                    <constraint firstAttribute="height" constant="104" id="2ly-tP-8SE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="ase-xV-OSB"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -303,23 +303,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tz9-3N-Qgp" firstAttribute="top" secondItem="A3U-XZ-jDx" secondAttribute="bottom" constant="8" symbolic="YES" id="26l-ES-ldy"/>
+                            <constraint firstItem="tz9-3N-Qgp" firstAttribute="top" secondItem="ady-oM-hzV" secondAttribute="bottom" constant="8" symbolic="YES" id="2so-Zy-DGm"/>
                             <constraint firstItem="wjY-GP-QZ4" firstAttribute="top" secondItem="tz9-3N-Qgp" secondAttribute="bottom" constant="31" id="3Ou-wP-dpg"/>
                             <constraint firstItem="tz9-3N-Qgp" firstAttribute="leading" secondItem="wjY-GP-QZ4" secondAttribute="leading" id="8eT-Ba-WEi"/>
+                            <constraint firstItem="ady-oM-hzV" firstAttribute="leading" secondItem="BFc-v0-6mj" secondAttribute="leadingMargin" constant="50" id="94G-i7-Tcf"/>
                             <constraint firstItem="NQ1-II-CUr" firstAttribute="trailing" secondItem="wjY-GP-QZ4" secondAttribute="trailing" id="CHe-4x-AzH"/>
                             <constraint firstItem="tz9-3N-Qgp" firstAttribute="trailing" secondItem="wjY-GP-QZ4" secondAttribute="trailing" id="Chk-xf-QH8"/>
-                            <constraint firstItem="tz9-3N-Qgp" firstAttribute="leading" secondItem="A3U-XZ-jDx" secondAttribute="leading" id="HyY-21-d10"/>
-                            <constraint firstItem="A3U-XZ-jDx" firstAttribute="centerX" secondItem="tz9-3N-Qgp" secondAttribute="centerX" id="JlL-8n-MFI"/>
-                            <constraint firstItem="A3U-XZ-jDx" firstAttribute="centerX" secondItem="BFc-v0-6mj" secondAttribute="centerX" id="Sfq-5g-vvk"/>
+                            <constraint firstItem="ady-oM-hzV" firstAttribute="centerX" secondItem="BFc-v0-6mj" secondAttribute="centerX" id="JP7-lK-yi4"/>
+                            <constraint firstItem="ady-oM-hzV" firstAttribute="trailing" secondItem="tz9-3N-Qgp" secondAttribute="trailing" id="MOs-Sg-IFF"/>
+                            <constraint firstItem="ady-oM-hzV" firstAttribute="top" secondItem="q7R-dQ-Jbg" secondAttribute="bottom" constant="72" id="Mna-dg-cGu"/>
+                            <constraint firstItem="ady-oM-hzV" firstAttribute="leading" secondItem="tz9-3N-Qgp" secondAttribute="leading" id="MuI-AU-ADG"/>
                             <constraint firstItem="NQ1-II-CUr" firstAttribute="top" secondItem="wjY-GP-QZ4" secondAttribute="bottom" constant="45" id="WM0-fM-lur"/>
-                            <constraint firstItem="A3U-XZ-jDx" firstAttribute="leading" secondItem="BFc-v0-6mj" secondAttribute="leadingMargin" constant="50" id="p2d-xD-hpg"/>
-                            <constraint firstItem="A3U-XZ-jDx" firstAttribute="top" secondItem="q7R-dQ-Jbg" secondAttribute="bottom" constant="84" id="sEC-4s-C6W"/>
                             <constraint firstItem="NQ1-II-CUr" firstAttribute="leading" secondItem="wjY-GP-QZ4" secondAttribute="leading" id="ybh-zW-z5m"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="NQ1-II-CUr" id="3oj-5B-jIx"/>
-                        <outlet property="myCapitalImage" destination="A3U-XZ-jDx" id="6qw-MN-FOi"/>
+                        <outlet property="myCapitalImage" destination="ady-oM-hzV" id="diI-FA-x5W"/>
                         <outlet property="myImage" destination="tz9-3N-Qgp" id="2kH-YO-wyD"/>
                     </connections>
                 </viewController>
@@ -480,12 +480,12 @@
                                     <action selector="inputButtonWithSender:" destination="ecL-wj-Ijx" eventType="touchUpInside" id="gxj-B4-j4z"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mpI-Ua-bfX" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="120" width="243" height="79"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0G-IA-6Bq" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="66" y="95" width="243" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="6Gb-9u-Ozs"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="h0i-Fm-PSz"/>
+                                    <constraint firstAttribute="height" constant="104" id="lmT-j2-3lO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="rho-0O-M7H"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -503,28 +503,28 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cHT-Ly-k8S" firstAttribute="trailing" secondItem="bXq-7q-CHB" secondAttribute="trailing" id="0Yc-uM-RtW"/>
-                            <constraint firstItem="mpI-Ua-bfX" firstAttribute="centerX" secondItem="Vgp-hL-waq" secondAttribute="centerX" id="2Ln-oC-21B"/>
-                            <constraint firstItem="mpI-Ua-bfX" firstAttribute="leading" secondItem="Vgp-hL-waq" secondAttribute="leadingMargin" constant="50" id="7vV-7x-l69"/>
+                            <constraint firstItem="q0G-IA-6Bq" firstAttribute="centerX" secondItem="Vgp-hL-waq" secondAttribute="centerX" id="1A7-Nu-5cI"/>
+                            <constraint firstItem="q0G-IA-6Bq" firstAttribute="leading" secondItem="Vgp-hL-waq" secondAttribute="leadingMargin" constant="50" id="KPH-PM-WVu"/>
+                            <constraint firstItem="cHT-Ly-k8S" firstAttribute="top" secondItem="q0G-IA-6Bq" secondAttribute="bottom" constant="8" symbolic="YES" id="Mou-kB-hlS"/>
+                            <constraint firstItem="q0G-IA-6Bq" firstAttribute="top" secondItem="BNR-aD-vzm" secondAttribute="bottom" constant="75" id="ST8-gX-Cd8"/>
                             <constraint firstItem="0Rc-CJ-Ar6" firstAttribute="trailing" secondItem="bXq-7q-CHB" secondAttribute="trailing" id="Tff-nz-1va"/>
-                            <constraint firstItem="cHT-Ly-k8S" firstAttribute="top" secondItem="mpI-Ua-bfX" secondAttribute="bottom" constant="8" symbolic="YES" id="UJc-dp-kIp"/>
+                            <constraint firstItem="q0G-IA-6Bq" firstAttribute="trailing" secondItem="cHT-Ly-k8S" secondAttribute="trailing" id="W0A-XX-OQE"/>
                             <constraint firstItem="0Rc-CJ-Ar6" firstAttribute="leading" secondItem="bXq-7q-CHB" secondAttribute="leading" id="Zri-Dq-W6t"/>
-                            <constraint firstItem="mpI-Ua-bfX" firstAttribute="top" secondItem="BNR-aD-vzm" secondAttribute="bottom" constant="100" id="oSp-bD-LYi"/>
-                            <constraint firstItem="mpI-Ua-bfX" firstAttribute="centerX" secondItem="cHT-Ly-k8S" secondAttribute="centerX" id="p5d-eF-IPa"/>
                             <constraint firstItem="0Rc-CJ-Ar6" firstAttribute="top" secondItem="bXq-7q-CHB" secondAttribute="bottom" constant="45" id="rSf-Wg-yPo"/>
-                            <constraint firstItem="cHT-Ly-k8S" firstAttribute="leading" secondItem="mpI-Ua-bfX" secondAttribute="leading" id="wnl-SQ-W4f"/>
                             <constraint firstItem="bXq-7q-CHB" firstAttribute="top" secondItem="cHT-Ly-k8S" secondAttribute="bottom" constant="31" id="y7p-Ls-RIw"/>
+                            <constraint firstItem="q0G-IA-6Bq" firstAttribute="leading" secondItem="cHT-Ly-k8S" secondAttribute="leading" id="ylV-D1-gKu"/>
                             <constraint firstItem="cHT-Ly-k8S" firstAttribute="leading" secondItem="bXq-7q-CHB" secondAttribute="leading" id="zce-gZ-1ea"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="0Rc-CJ-Ar6" id="PgM-Sh-kEV"/>
-                        <outlet property="myCapitalImage" destination="mpI-Ua-bfX" id="ELU-pH-kAs"/>
+                        <outlet property="myCapitalImage" destination="q0G-IA-6Bq" id="QDF-uF-bIY"/>
                         <outlet property="myImage" destination="cHT-Ly-k8S" id="axp-Er-UFQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="grJ-YW-Unc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230" y="949"/>
+            <point key="canvasLocation" x="-231.19999999999999" y="948.57571214392806"/>
         </scene>
         <!--CapitalOneApp-->
         <scene sceneID="RNi-Co-qUR">
@@ -856,12 +856,12 @@
                                     <action selector="inputButtonWithSender:" destination="ecL-wj-Ijx" eventType="touchUpInside" id="cdH-lf-LRE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qm2-QY-d4t" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="104" width="243" height="79"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ad-eU-611" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="66" y="79" width="243" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="cIL-Jb-ItV"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="qUt-u0-Rvu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="OUO-X4-syb"/>
+                                    <constraint firstAttribute="height" constant="104" id="k5y-QT-GOg"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -878,25 +878,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qm2-QY-d4t" firstAttribute="leading" secondItem="via-w4-lkw" secondAttribute="leadingMargin" constant="50" id="68J-kL-b8s"/>
-                            <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="top" secondItem="Qm2-QY-d4t" secondAttribute="bottom" constant="8" symbolic="YES" id="72G-3c-O7D"/>
+                            <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="trailing" secondItem="7ad-eU-611" secondAttribute="trailing" id="4wh-Qz-9rD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="a0u-H7-CfU" secondAttribute="trailing" constant="50" id="EGp-EX-AR8"/>
                             <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="leading" secondItem="via-w4-lkw" secondAttribute="leadingMargin" constant="50" id="GpV-hP-xUu"/>
                             <constraint firstItem="6OD-7c-Cod" firstAttribute="leading" secondItem="a0u-H7-CfU" secondAttribute="leading" id="J9r-Dl-Dkl"/>
+                            <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="leading" secondItem="7ad-eU-611" secondAttribute="leading" id="JNb-lx-DCK"/>
                             <constraint firstItem="a0u-H7-CfU" firstAttribute="leading" secondItem="via-w4-lkw" secondAttribute="leadingMargin" constant="50" id="LPD-jH-KTg"/>
                             <constraint firstItem="a0u-H7-CfU" firstAttribute="top" secondItem="q0Z-kQ-Ryq" secondAttribute="bottom" constant="31" id="Pga-sM-k4C"/>
-                            <constraint firstItem="Qm2-QY-d4t" firstAttribute="centerX" secondItem="via-w4-lkw" secondAttribute="centerX" id="QPU-JG-9FU"/>
-                            <constraint firstItem="Qm2-QY-d4t" firstAttribute="centerX" secondItem="via-w4-lkw" secondAttribute="centerX" id="Wdp-yb-2rQ"/>
+                            <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="top" secondItem="7ad-eU-611" secondAttribute="bottom" constant="8" symbolic="YES" id="d3H-0w-0k7"/>
                             <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="top" secondItem="H5c-8G-2UO" secondAttribute="bottom" constant="171" id="eVX-hj-rUW"/>
-                            <constraint firstItem="Qm2-QY-d4t" firstAttribute="centerX" secondItem="via-w4-lkw" secondAttribute="centerX" id="jfS-kF-9qq"/>
                             <constraint firstItem="6OD-7c-Cod" firstAttribute="trailing" secondItem="a0u-H7-CfU" secondAttribute="trailing" id="oRa-59-DS6"/>
+                            <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="trailing" secondItem="a0u-H7-CfU" secondAttribute="trailing" id="seh-f9-Tod"/>
                             <constraint firstItem="6OD-7c-Cod" firstAttribute="top" secondItem="a0u-H7-CfU" secondAttribute="bottom" constant="45" id="ubU-ks-HuS"/>
-                            <constraint firstItem="Qm2-QY-d4t" firstAttribute="centerX" secondItem="q0Z-kQ-Ryq" secondAttribute="centerX" id="yfj-Pw-75y"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="6OD-7c-Cod" id="urD-oj-gSr"/>
-                        <outlet property="myCapitalImage" destination="Qm2-QY-d4t" id="6sc-Hq-rlW"/>
+                        <outlet property="myCapitalImage" destination="7ad-eU-611" id="hNx-ss-47n"/>
                         <outlet property="myImage" destination="q0Z-kQ-Ryq" id="TOb-tM-qig"/>
                     </connections>
                 </viewController>

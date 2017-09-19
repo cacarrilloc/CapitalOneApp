@@ -19,8 +19,10 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myImage.image = #imageLiteral(resourceName: "MrBadcredit")
         myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
+        myImage.image = #imageLiteral(resourceName: "MrBadcredit")
+        myImage.clipsToBounds = true
+        myCapitalImage.clipsToBounds = true
     }
     
     @IBAction func inputButton(sender: UIButton){

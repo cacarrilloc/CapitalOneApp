@@ -22,6 +22,8 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         myImage.image = #imageLiteral(resourceName: "MrsAveragecredit")
         myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
+        myImage.clipsToBounds = true
+        myCapitalImage.clipsToBounds = true
     }
     
     @IBAction func inputButton(sender: UIButton){

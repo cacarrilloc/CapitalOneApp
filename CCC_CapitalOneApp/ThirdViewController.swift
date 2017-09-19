@@ -22,6 +22,8 @@ class ThirdViewController: UIViewController {
         super.viewDidLoad()
         myImage.image = #imageLiteral(resourceName: "MrsGoodcredit")
         myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
+        myImage.clipsToBounds = true
+        myCapitalImage.clipsToBounds = true
     }
     
     @IBAction func inputButton(sender: UIButton){

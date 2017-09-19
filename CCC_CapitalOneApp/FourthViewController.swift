@@ -23,6 +23,8 @@ class FourthViewController: UIViewController {
         super.viewDidLoad()
         myImage.image = #imageLiteral(resourceName: "MrBestcredit")
         myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
+        myImage.clipsToBounds = true
+        myCapitalImage.clipsToBounds = true
     }
     
     @IBAction func inputButton(sender: UIButton){
