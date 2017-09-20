@@ -35,7 +35,7 @@
         <scene sceneID="r3y-Ra-82U">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" title="CapitalOneApp" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ibf-vT-tg6" customClass="PageViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Mv6-C2-SUw"/>
+                    <navigationItem key="navigationItem" title="CapitalOneApp" id="Mv6-C2-SUw"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGt-Xl-gzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
