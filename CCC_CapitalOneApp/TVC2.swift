@@ -32,12 +32,29 @@ class TVC2: UIViewController {
     }
 }
 
-extension TVC2:VMDelegate8{
+extension TVC2:VMDelegate9{
     func updateImage(image: UIImage) {
         DispatchQueue.main.async {
             self.myImage.image = image
+            self.myLabel1.clipsToBounds = true
+            self.myLabel2.clipsToBounds = true
             self.myLabel1.text = self.passedName
             self.myLabel2.text = self.passedDesc
+            
+            // Backgroud Image
+            let background = UIImage(named: "capitalOne2")
+            var imageView : UIImageView!
+            imageView = UIImageView(frame: self.view.bounds)
+            imageView.contentMode =  UIViewContentMode.scaleAspectFill
+            imageView.clipsToBounds = true
+            imageView.image = background
+            imageView.center = self.view.center
+            self.view.addSubview(imageView)
+            self.view.sendSubview(toBack: imageView)
         }
     }
 }
+
+
+
+

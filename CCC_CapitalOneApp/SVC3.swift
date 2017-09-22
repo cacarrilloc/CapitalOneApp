@@ -12,23 +12,23 @@ import UIKit
 
 class SVC3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var myLabel1: UILabel!
-    @IBOutlet weak var myLabel2: UILabel!
+    @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var myTableView: UITableView!
     
     lazy var SVCViewModel3:SVCModel3 = SVCModel3(delegateSVCModel3: self)
     
-    var passArray:[Product]?
     var nameToPass:String?
     var descToPass:String?
     var imageToPass:String?
+    var cellCounter:Int = 0
     var currentImage:UIImage?
+    var passedArray:[Product]?
     
     //let images = [#imageLiteral(resourceName: "card1"), #imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card1")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let array = passArray else {return}
+        guard let array = passedArray else {return}
         SVCViewModel3.getMasterArray(array: array)
         let bundle = Bundle(for: CustomTableViewCell.self)
         let nib = UINib(nibName: "CustomeViewCell", bundle: bundle)
@@ -47,7 +47,8 @@ class SVC3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-        SVCViewModel3.getImage(urlIndex: indexPath.row) // Download Image from API Call
+        cellCounter = (cellCounter + 1)
+        SVCViewModel3.getImage(urlIndex: indexPath.row, counter: cellCounter ) //Download Image (Api Call)
         let name = SVCViewModel3.getName(index: indexPath.row)
         guard let imageIn = currentImage else {return cell} // Receive Image
         cell.fillCell(with: name, image: imageIn)
@@ -77,11 +78,23 @@ class SVC3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension SVC3:VMDelegate6{
+extension SVC3:VMDelegate7{
     func updateTableView(image: UIImage) {
         DispatchQueue.main.async {
             self.currentImage = image
             self.myTableView.reloadData()
+             self.myLabel.clipsToBounds = true
+            
+            // Backgroud Image
+            let background = UIImage(named: "capitalOne2")
+            var imageView : UIImageView!
+            imageView = UIImageView(frame: self.view.bounds)
+            imageView.contentMode =  UIViewContentMode.scaleAspectFill
+            imageView.clipsToBounds = true
+            imageView.image = background
+            imageView.center = self.view.center
+            self.view.addSubview(imageView)
+            self.view.sendSubview(toBack: imageView)
         }
     }
 }

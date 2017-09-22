@@ -11,24 +11,41 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var myCapitalImage: UIImageView!
-    @IBOutlet weak var myButton: UIButton!
     
     lazy var secondViewModel:ViewModel2 = ViewModel2(delegate2: self)
     let taxId:Int = 666666666
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myImage.image = #imageLiteral(resourceName: "MrsAveragecredit")
-        myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
-        myImage.clipsToBounds = true
-        myCapitalImage.clipsToBounds = true
+        setBackgroundImage()
+        self.myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
+        self.myImage.image = #imageLiteral(resourceName: "MrsAveragecredit")
+        self.myImage.clipsToBounds = true
+        self.myCapitalImage.clipsToBounds = true
+        self.myButton.clipsToBounds = true
+        self.myLabel.clipsToBounds = true
+        print("SecondViewController")
     }
     
     @IBAction func inputButton(sender: UIButton){
         secondViewModel.getUserInfo(url: "https://api-sandbox.capitalone.com/oauth2/token", taxId: taxId)
         print ("@IBAction")
+    }
+    
+    func setBackgroundImage(){
+        let background = UIImage(named: "capitalOne2")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,7 +57,7 @@ extension SecondViewController:VMDelegate2{
     func passQualifications(array: [Product]){
         DispatchQueue.main.async {
             let myVC = self.storyboard?.instantiateViewController(withIdentifier: "SVC2") as! SVC2
-            myVC.passArray = array
+            myVC.passedArray = array
             self.navigationController?.pushViewController(myVC, animated: true)
         }
     }

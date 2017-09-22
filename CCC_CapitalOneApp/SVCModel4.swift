@@ -2,23 +2,23 @@
 //  SVCModel4.swift
 //  CCC_CapitalOneApp
 //
-//  Created by Carlos Carrillo on 9/8/17.
+//  Created by Carlos Carrillo on 9/8/18.
 //  Copyright © 2017 Carlos Carrillo. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-protocol VMDelegate7:class{
+protocol VMDelegate8:class{
     func updateTableView(image: UIImage)
 }
 
 class SVCModel4 {
     
-    weak var SVCModelViewController4:VMDelegate7?
+    weak var SVCModelViewController4:VMDelegate8?
     var masterArray:[Product]?
     
-    init(delegateSVCModel4:VMDelegate7? = nil){
+    init(delegateSVCModel4:VMDelegate8? = nil){
         self.SVCModelViewController4 = delegateSVCModel4
     }
     
@@ -49,16 +49,18 @@ class SVCModel4 {
         return image[index]
     }
     
-    func getImage(urlIndex:Int) {
-        let url = getImageUrl(index: urlIndex)
-        if let image = ImageCache.shared.cache.object(forKey: url as NSString){
-            self.SVCModelViewController4?.updateTableView(image: image)
-        } else {
-            Networking.getImage(url: url){
-                [unowned self] (error, data) in
-                guard error == nil else {return}
-                guard let dataIn = data else {return}
-                self.SVCModelViewController4?.updateTableView(image: dataIn)
+    func getImage(urlIndex:Int, counter:Int) {
+        if counter <= getCounter() {
+            let url = getImageUrl(index: urlIndex)
+            if let image = ImageCache.shared.cache.object(forKey: url as NSString){
+                self.SVCModelViewController4?.updateTableView(image: image)
+            } else {
+                Networking.getImage(url: url){
+                    [unowned self] (error, data) in
+                    guard error == nil else {return}
+                    guard let dataIn = data else {return}
+                    self.SVCModelViewController4?.updateTableView(image: dataIn)
+                }
             }
         }
     }

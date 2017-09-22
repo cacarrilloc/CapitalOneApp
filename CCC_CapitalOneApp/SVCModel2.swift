@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-protocol VMDelegate5:class{
+protocol VMDelegate6:class{
     func updateTableView(image: UIImage)
 }
 
 class SVCModel2 {
     
-    weak var SVCModelViewController2:VMDelegate5?
+    weak var SVCModelViewController2:VMDelegate6?
     var masterArray:[Product]?
     
-    init(delegateSVCModel2:VMDelegate5? = nil){
+    init(delegateSVCModel2:VMDelegate6? = nil){
         self.SVCModelViewController2 = delegateSVCModel2
     }
  
@@ -49,16 +49,18 @@ class SVCModel2 {
         return image[index]
     }
     
-    func getImage(urlIndex:Int) {
-        let url = getImageUrl(index: urlIndex)
-        if let image = ImageCache.shared.cache.object(forKey: url as NSString){
-            self.SVCModelViewController2?.updateTableView(image: image)
-        } else {
-            Networking.getImage(url: url){
-                [unowned self] (error, data) in
-                guard error == nil else {return}
-                guard let dataIn = data else {return}
-                self.SVCModelViewController2?.updateTableView(image: dataIn)
+    func getImage(urlIndex:Int, counter:Int) {
+        if counter <= getCounter() {
+            let url = getImageUrl(index: urlIndex)
+            if let image = ImageCache.shared.cache.object(forKey: url as NSString){
+                self.SVCModelViewController2?.updateTableView(image: image)
+            } else {
+                Networking.getImage(url: url){
+                    [unowned self] (error, data) in
+                    guard error == nil else {return}
+                    guard let dataIn = data else {return}
+                    self.SVCModelViewController2?.updateTableView(image: dataIn)
+                }
             }
         }
     }

@@ -71,29 +71,16 @@ class Networking {
     
     // Get Card Image
     static func getImage(url:String, forObject:UIImageView? = nil, completion:@escaping(Error?, UIImage?)->()){
-        guard let uUrl = URL(string: url) else {return}
-        let session = URLSession.shared
-        print("downloading picture")
-        
-        let task = session.dataTask(with: uUrl){
-            (data, response, error) in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return
-            }
-            guard let datos = data else {
-                print ("Error: No data in call!")
-                return
-            }
+        Alamofire.request(url, method: .get).responseData { response in
+            guard let image = response.data else {return}
             DispatchQueue.main.async {
-                guard let image = UIImage(data: datos) else {return}
+                guard let image = UIImage(data: image) else {return}
                 ImageCache.shared.cache.setObject(image, forKey: url as NSString)
                 completion(nil, image)
+                print("Picture downloaded.")
             }
         }
-        task.resume()
     }
-    
     deinit {
         print("got removed from the app")
     }

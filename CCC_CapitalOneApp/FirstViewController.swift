@@ -1,4 +1,4 @@
-//
+ //
 //  FirstViewController.swift
 //  CCC_CapitalOneApp
 //
@@ -11,23 +11,34 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var myCapitalImage: UIImageView!
-    @IBOutlet weak var myButton: UIButton!
     
     lazy var firstViewModel:ViewModel1 = ViewModel1(delegate1: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
-        myImage.image = #imageLiteral(resourceName: "MrBadcredit")
-        myImage.clipsToBounds = true
-        myCapitalImage.clipsToBounds = true
+        setBackgroundImage()
+        firstViewModel.getUserInfo()
     }
     
     @IBAction func inputButton(sender: UIButton){
-        firstViewModel.getUserInfo(url: "https://api-sandbox.capitalone.com/oauth2/token")
+        firstViewModel.getUserInfo()
         print ("@IBAction")
+    }
+    
+    func setBackgroundImage(){
+        let background = UIImage(named: "capitalOne2")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,11 +47,15 @@ class FirstViewController: UIViewController {
 }
 
 extension FirstViewController:VMDelegate1{
-    func passQualifications(){
+    func passQualifications(message: String) {
         DispatchQueue.main.async {
-            self.myImage.image = #imageLiteral(resourceName: "MrBadcredit")
             self.myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
-            print("Hello")
+            self.myImage.image = #imageLiteral(resourceName: "MrBadcredit")
+            self.myImage.clipsToBounds = true
+            self.myCapitalImage.clipsToBounds = true
+            self.myButton.clipsToBounds = true
+            self.myLabel.clipsToBounds = true
+            print("FirstViewController")
         }
     }
 }

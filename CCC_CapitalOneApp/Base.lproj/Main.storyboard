@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2gW-LC-zOh">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2gW-LC-zOh">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,12 +15,12 @@
         </array>
     </customFonts>
     <scenes>
-        <!--CapitalOneApp-->
+        <!--Customer-->
         <scene sceneID="4BC-mw-Dni">
             <objects>
-                <navigationController title="CapitalOneApp" id="2gW-LC-zOh" sceneMemberID="viewController">
+                <navigationController title="Customer" id="2gW-LC-zOh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZKQ-nb-mUa">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -41,30 +41,27 @@
             </objects>
             <point key="canvasLocation" x="478" y="107"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Cards-->
         <scene sceneID="6US-UY-VGG">
             <objects>
-                <viewController storyboardIdentifier="SCV1" title="CapitalOneApp" id="bW3-LE-67N" customClass="SCV1" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SCV1" title="Cards" id="bW3-LE-67N" customClass="SCV1" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dNf-1u-M8L"/>
                         <viewControllerLayoutGuide type="bottom" id="BD3-fh-cx6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XcL-t9-9n8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v56-gS-fFx" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="57" y="438" width="261" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aOU-Gn-Mbx" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="57" y="121" width="261" height="257"/>
+                                <rect key="frame" x="61" y="134" width="292" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="261" id="DlF-OM-nNA"/>
-                                    <constraint firstAttribute="height" constant="257" id="fKo-G4-14v"/>
+                                    <constraint firstAttribute="width" constant="292" id="2sT-U0-V9C"/>
+                                    <constraint firstAttribute="height" constant="312" id="aSn-XT-6nc"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="312" id="dAX-jf-0WE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="292" id="dUs-Lw-vQ9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="257" id="ouP-ux-6Y6"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -78,44 +75,70 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v56-gS-fFx" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="61" y="509" width="292" height="99"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="aR1-Wa-WPh"/>
+                                    <constraint firstAttribute="width" constant="292" id="iKP-1m-c7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" constant="41" id="Dx3-sm-rsi"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" id="HAS-Xc-Nws"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="top" secondItem="aOU-Gn-Mbx" secondAttribute="bottom" constant="60" id="HUm-d6-Tv9"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="top" secondItem="aOU-Gn-Mbx" secondAttribute="bottom" constant="60" id="LdR-Oq-b8i"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="Sj5-b9-c6f"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="top" secondItem="dNf-1u-M8L" secondAttribute="bottom" constant="101" id="UCR-aW-90f"/>
-                            <constraint firstItem="BD3-fh-cx6" firstAttribute="top" secondItem="v56-gS-fFx" secondAttribute="bottom" constant="208.5" id="Ypy-7T-xAO"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="hVt-Ea-mWs"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="v56-gS-fFx" secondAttribute="trailing" id="nOb-0W-U05"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="u51-bR-74P"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="7Pf-5w-2pz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" constant="41" id="C3e-Wt-lT7"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="Fsw-Cw-fS2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v56-gS-fFx" secondAttribute="trailing" constant="41" id="JCc-2l-DWy"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="aOU-Gn-Mbx" secondAttribute="leading" id="Mjr-gi-Gwn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" constant="41" id="SlN-3J-BqE"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="VKh-0b-2TG"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="XpR-Pb-vvP"/>
+                            <constraint firstItem="BD3-fh-cx6" firstAttribute="top" secondItem="v56-gS-fFx" secondAttribute="bottom" constant="128" id="csl-mg-fbT"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="flz-B6-VnY"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="top" secondItem="dNf-1u-M8L" secondAttribute="bottom" constant="114" id="lNw-SQ-Bpa"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="trailing" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" id="q3C-Dx-Z9t"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="top" secondItem="aOU-Gn-Mbx" secondAttribute="bottom" constant="63" id="wDt-Jm-2Qw"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="yY1-We-lrx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myImage" destination="aOU-Gn-Mbx" id="owh-mZ-IQg"/>
-                        <outlet property="myLabel" destination="v56-gS-fFx" id="WMR-Ib-Ee3"/>
+                        <outlet property="myImage" destination="aOU-Gn-Mbx" id="ZQv-BQ-Gld"/>
+                        <outlet property="myLabel" destination="v56-gS-fFx" id="0yD-Sb-NXk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hz-zK-4UA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-991.20000000000005" y="-744.3778110944528"/>
+            <point key="canvasLocation" x="-991.304347826087" y="-745.10869565217399"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Customer-->
         <scene sceneID="Fmf-I8-DAs">
             <objects>
-                <viewController storyboardIdentifier="firstVC" title="CapitalOneApp" id="Tez-O6-muX" customClass="FirstViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstVC" title="Customer" id="Tez-O6-muX" customClass="FirstViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ze5-t4-i1m"/>
                         <viewControllerLayoutGuide type="bottom" id="qfB-Rf-MDL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wrG-Yy-8Lm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F2t-mM-h8x" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="195" width="243" height="227"/>
+                                <rect key="frame" x="70" y="195" width="274" height="227"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="JoU-oZ-jow"/>
@@ -132,8 +155,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Badcredit Rodgers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-AT-z6t" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="453" width="243" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Badcredit Rodgers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-AT-z6t" userLabel="TextContainer" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="70" y="453" width="274" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="xmf-on-TMj"/>
                                 </constraints>
@@ -153,7 +177,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVU-j6-7js" customClass="UIButtonX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="536" width="243" height="30"/>
+                                <rect key="frame" x="70" y="536" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.20748960969999999" green="0.76219296459999997" blue="0.08232159168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Check Prequalifications">
@@ -170,7 +194,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-hM-obP" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="83" width="243" height="104"/>
+                                <rect key="frame" x="70" y="83" width="274" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="lm3-PK-UOp"/>
@@ -209,26 +233,27 @@
                         <outlet property="myButton" destination="cVU-j6-7js" id="PX0-b1-io4"/>
                         <outlet property="myCapitalImage" destination="T1C-hM-obP" id="RFF-7C-cC1"/>
                         <outlet property="myImage" destination="F2t-mM-h8x" id="v8N-3X-V75"/>
+                        <outlet property="myLabel" destination="9L9-AT-z6t" id="My4-88-BXE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKe-db-yaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-229.59999999999999" y="-744.3778110944528"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Customer-->
         <scene sceneID="eIv-Ok-a31">
             <objects>
-                <viewController storyboardIdentifier="fourthVC" title="CapitalOneApp" id="BF6-Kk-EhZ" customClass="FourthViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fourthVC" title="Customer" id="BF6-Kk-EhZ" customClass="FourthViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q7R-dQ-Jbg"/>
                         <viewControllerLayoutGuide type="bottom" id="jQ0-qh-mkh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BFc-v0-6mj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tz9-3N-Qgp" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="204" width="243" height="227"/>
+                                <rect key="frame" x="70" y="204" width="274" height="227"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="zHd-Kx-kxr"/>
@@ -246,7 +271,8 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Bestcredit Carrillo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjY-GP-QZ4" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="462" width="243" height="38"/>
+                                <rect key="frame" x="70" y="462" width="274" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="mjv-ow-Ynt"/>
                                 </constraints>
@@ -266,7 +292,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-II-CUr" customClass="UIButtonX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="545" width="243" height="30"/>
+                                <rect key="frame" x="70" y="545" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.20748960969999999" green="0.76219296459999997" blue="0.08232159168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Check Prequalifications">
@@ -282,7 +308,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ady-oM-hzV" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="92" width="243" height="104"/>
+                                <rect key="frame" x="70" y="92" width="274" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="2ly-tP-8SE"/>
@@ -321,39 +347,53 @@
                         <outlet property="myButton" destination="NQ1-II-CUr" id="3oj-5B-jIx"/>
                         <outlet property="myCapitalImage" destination="ady-oM-hzV" id="diI-FA-x5W"/>
                         <outlet property="myImage" destination="tz9-3N-Qgp" id="2kH-YO-wyD"/>
+                        <outlet property="myLabel" destination="wjY-GP-QZ4" id="doR-FB-gNO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLA-tR-DFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="478" y="949"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Card Info-->
         <scene sceneID="oHB-Gl-gtr">
             <objects>
-                <viewController storyboardIdentifier="TVC4" title="CapitalOneApp" id="nwe-Xt-iaY" customClass="TVC4" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TVC4" title="Card Info" id="nwe-Xt-iaY" customClass="TVC4" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SRF-Oa-bfP"/>
                         <viewControllerLayoutGuide type="bottom" id="94N-Q9-hV9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8xP-81-HJr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba8-hy-aqQ" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="28" width="343" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqz-Ar-XmZ" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="59" width="374" height="69"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="PcH-ds-XAK"/>
-                                    <constraint firstAttribute="height" constant="69" id="ZFD-gk-E6I"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="ntc-xF-aTw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="IGz-DM-tKI"/>
+                                    <constraint firstAttribute="height" constant="69" id="MqD-2Q-VV6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="oIw-kT-a3s"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-xa-HFO" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="298" width="343" height="299"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-xd-lkt" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="351" width="374" height="326"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="299" id="GEE-rT-nmB"/>
+                                    <constraint firstAttribute="height" constant="326" id="L46-IJ-KHO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -363,70 +403,69 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRC-iD-Aeh" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="105" width="343" height="197"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-h3-eh7" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="136" width="374" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="197" id="EPI-AE-4Jh"/>
-                                    <constraint firstAttribute="width" constant="343" id="g6H-3p-Kfa"/>
+                                    <constraint firstAttribute="height" constant="197" id="jbf-Sj-ahH"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cRC-iD-Aeh" firstAttribute="top" secondItem="ba8-hy-aqQ" secondAttribute="bottom" constant="8" symbolic="YES" id="0a7-BT-n3q"/>
-                            <constraint firstItem="94N-Q9-hV9" firstAttribute="top" secondItem="cRC-iD-Aeh" secondAttribute="bottom" constant="365" id="0md-wa-Xtu"/>
-                            <constraint firstItem="94N-Q9-hV9" firstAttribute="top" secondItem="hvT-xa-HFO" secondAttribute="bottom" constant="70" id="9d1-dR-BPl"/>
-                            <constraint firstItem="ba8-hy-aqQ" firstAttribute="leading" secondItem="8xP-81-HJr" secondAttribute="leadingMargin" id="Xuz-Yk-fDp"/>
-                            <constraint firstItem="cRC-iD-Aeh" firstAttribute="trailing" secondItem="8xP-81-HJr" secondAttribute="trailingMargin" id="Xwi-Xp-kV4"/>
-                            <constraint firstItem="hvT-xa-HFO" firstAttribute="leading" secondItem="8xP-81-HJr" secondAttribute="leadingMargin" id="t3I-4k-zF2"/>
-                            <constraint firstItem="hvT-xa-HFO" firstAttribute="trailing" secondItem="8xP-81-HJr" secondAttribute="trailingMargin" id="y0O-H9-2iy"/>
-                            <constraint firstItem="cRC-iD-Aeh" firstAttribute="leading" secondItem="8xP-81-HJr" secondAttribute="leadingMargin" id="ysN-b8-tWE"/>
-                            <constraint firstItem="ba8-hy-aqQ" firstAttribute="trailing" secondItem="8xP-81-HJr" secondAttribute="trailingMargin" id="zUc-xd-K5s"/>
+                            <constraint firstItem="Fqz-Ar-XmZ" firstAttribute="top" secondItem="SRF-Oa-bfP" secondAttribute="bottom" constant="39" id="8qZ-Gm-ob4"/>
+                            <constraint firstItem="ydA-h3-eh7" firstAttribute="top" secondItem="Fqz-Ar-XmZ" secondAttribute="bottom" constant="8" symbolic="YES" id="8rd-fO-5ID"/>
+                            <constraint firstItem="NAM-xd-lkt" firstAttribute="top" secondItem="ydA-h3-eh7" secondAttribute="bottom" constant="18" id="GB5-Vf-frZ"/>
+                            <constraint firstItem="ydA-h3-eh7" firstAttribute="leading" secondItem="Fqz-Ar-XmZ" secondAttribute="leading" id="MK2-8G-YmY"/>
+                            <constraint firstItem="Fqz-Ar-XmZ" firstAttribute="leading" secondItem="8xP-81-HJr" secondAttribute="leadingMargin" id="Ypr-pc-AWM"/>
+                            <constraint firstItem="ydA-h3-eh7" firstAttribute="leading" secondItem="NAM-xd-lkt" secondAttribute="leading" id="bfW-X2-viX"/>
+                            <constraint firstItem="Fqz-Ar-XmZ" firstAttribute="trailing" secondItem="8xP-81-HJr" secondAttribute="trailingMargin" id="jU3-Xl-lgt"/>
+                            <constraint firstItem="ydA-h3-eh7" firstAttribute="trailing" secondItem="NAM-xd-lkt" secondAttribute="trailing" id="m22-wK-acn"/>
+                            <constraint firstItem="ydA-h3-eh7" firstAttribute="trailing" secondItem="Fqz-Ar-XmZ" secondAttribute="trailing" id="sId-0s-FbE"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myImage" destination="cRC-iD-Aeh" id="J4a-Fm-yvp"/>
-                        <outlet property="myLabel1" destination="ba8-hy-aqQ" id="M77-PO-hk1"/>
-                        <outlet property="myLabel2" destination="hvT-xa-HFO" id="R6Y-dd-6Kw"/>
+                        <outlet property="myImage" destination="ydA-h3-eh7" id="eoZ-GE-h2B"/>
+                        <outlet property="myLabel1" destination="Fqz-Ar-XmZ" id="5H2-Ti-FUd"/>
+                        <outlet property="myLabel2" destination="NAM-xd-lkt" id="fWG-65-96E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJg-T4-69e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2000.8" y="948.57571214392806"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Customer-->
         <scene sceneID="RLN-iW-oz2">
             <objects>
-                <viewController storyboardIdentifier="thirdVC" title="CapitalOneApp" id="Agv-Zy-LL0" customClass="ThirdViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="thirdVC" title="Customer" id="Agv-Zy-LL0" customClass="ThirdViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BNR-aD-vzm"/>
                         <viewControllerLayoutGuide type="bottom" id="cUw-3d-gxx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Vgp-hL-waq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cHT-Ly-k8S" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="207" width="243" height="227"/>
+                                <rect key="frame" x="70" y="207" width="274" height="227"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="iRr-tu-c01"/>
@@ -444,7 +483,8 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Goodcredit Wilson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXq-7q-CHB" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="465" width="243" height="38"/>
+                                <rect key="frame" x="70" y="465" width="274" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="a1O-yE-lp1"/>
                                 </constraints>
@@ -464,7 +504,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rc-CJ-Ar6" customClass="UIButtonX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="548" width="243" height="30"/>
+                                <rect key="frame" x="70" y="548" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.20748960969999999" green="0.76219296459999997" blue="0.08232159168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Check Prequalifications">
@@ -481,7 +521,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0G-IA-6Bq" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="95" width="243" height="104"/>
+                                <rect key="frame" x="70" y="95" width="274" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="lmT-j2-3lO"/>
@@ -520,43 +560,53 @@
                         <outlet property="myButton" destination="0Rc-CJ-Ar6" id="PgM-Sh-kEV"/>
                         <outlet property="myCapitalImage" destination="q0G-IA-6Bq" id="QDF-uF-bIY"/>
                         <outlet property="myImage" destination="cHT-Ly-k8S" id="axp-Er-UFQ"/>
+                        <outlet property="myLabel" destination="bXq-7q-CHB" id="Zsn-IN-wCO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="grJ-YW-Unc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-231.19999999999999" y="948.57571214392806"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Card Info-->
         <scene sceneID="RNi-Co-qUR">
             <objects>
-                <viewController storyboardIdentifier="TVC3" title="CapitalOneApp" id="4BH-aj-f90" customClass="TVC3" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TVC3" title="Card Info" id="4BH-aj-f90" customClass="TVC3" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FGr-gt-Lre"/>
                         <viewControllerLayoutGuide type="bottom" id="oil-VR-CTx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xZq-Pb-gPB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ep-Pk-y0A" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="49" width="343" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35l-SN-4KA" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="59" width="374" height="69"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="2fu-NX-vic"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="69" id="IqQ-UV-141"/>
-                                    <constraint firstAttribute="width" constant="343" id="b6Y-tt-p52"/>
-                                    <constraint firstAttribute="height" constant="69" id="rBZ-CE-pCu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="0bw-c5-6TN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="23P-3y-PiU"/>
+                                    <constraint firstAttribute="height" constant="69" id="vfT-kl-In8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-W0-5dr" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="319" width="343" height="299"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-Iu-bNn" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="351" width="374" height="326"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="299" id="JdR-v7-i2T"/>
-                                    <constraint firstAttribute="width" constant="343" id="amx-HT-ZDf"/>
-                                    <constraint firstAttribute="height" constant="299" id="lNY-2V-hTg"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="299" id="usR-1O-6NV"/>
+                                    <constraint firstAttribute="height" constant="326" id="K7Q-VK-iiy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -566,123 +616,115 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5pH-hq-ssp" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="126" width="343" height="197"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2R-Jl-RIc" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="136" width="374" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="197" id="C0g-Xa-ZGv"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343" id="GvI-Wj-Ydm"/>
-                                    <constraint firstAttribute="width" constant="343" id="Ygw-hr-SIV"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="197" id="agE-fQ-keg"/>
-                                    <constraint firstAttribute="height" constant="197" id="dUc-4l-efm"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="kPD-0H-F0y"/>
+                                    <constraint firstAttribute="height" constant="197" id="H4K-ik-7pf"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5pH-hq-ssp" firstAttribute="leading" secondItem="xZq-Pb-gPB" secondAttribute="leadingMargin" id="9cn-E7-Or0"/>
-                            <constraint firstItem="5pH-hq-ssp" firstAttribute="leading" secondItem="LZ2-W0-5dr" secondAttribute="leading" id="GnL-FM-WnA"/>
-                            <constraint firstItem="LZ2-W0-5dr" firstAttribute="trailing" secondItem="xZq-Pb-gPB" secondAttribute="trailingMargin" id="ITh-sO-iBG"/>
-                            <constraint firstItem="oil-VR-CTx" firstAttribute="top" secondItem="LZ2-W0-5dr" secondAttribute="bottom" constant="49" id="J2g-4r-ajB"/>
-                            <constraint firstItem="5pH-hq-ssp" firstAttribute="leading" secondItem="4Ep-Pk-y0A" secondAttribute="leading" id="J6K-78-38R"/>
-                            <constraint firstItem="4Ep-Pk-y0A" firstAttribute="trailing" secondItem="xZq-Pb-gPB" secondAttribute="trailingMargin" id="MWP-gK-Afr"/>
-                            <constraint firstItem="5pH-hq-ssp" firstAttribute="top" secondItem="4Ep-Pk-y0A" secondAttribute="bottom" constant="8" symbolic="YES" id="Trv-8U-5x0"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Ep-Pk-y0A" secondAttribute="trailing" constant="16" id="VQK-0L-s1g"/>
-                            <constraint firstItem="5pH-hq-ssp" firstAttribute="trailing" secondItem="LZ2-W0-5dr" secondAttribute="trailing" id="Vey-cn-ujU"/>
-                            <constraint firstItem="4Ep-Pk-y0A" firstAttribute="centerX" secondItem="xZq-Pb-gPB" secondAttribute="centerX" id="agx-YV-YQg"/>
-                            <constraint firstItem="4Ep-Pk-y0A" firstAttribute="top" secondItem="FGr-gt-Lre" secondAttribute="bottom" constant="29" id="c5N-l3-nFv"/>
-                            <constraint firstItem="LZ2-W0-5dr" firstAttribute="leading" secondItem="xZq-Pb-gPB" secondAttribute="leadingMargin" id="fSi-i4-b9h"/>
-                            <constraint firstItem="LZ2-W0-5dr" firstAttribute="leading" secondItem="xZq-Pb-gPB" secondAttribute="leadingMargin" id="gev-lJ-cdj"/>
-                            <constraint firstItem="4Ep-Pk-y0A" firstAttribute="leading" secondItem="xZq-Pb-gPB" secondAttribute="leadingMargin" id="m4J-A0-uvx"/>
-                            <constraint firstItem="5pH-hq-ssp" firstAttribute="trailing" secondItem="xZq-Pb-gPB" secondAttribute="trailingMargin" id="qfZ-W7-4St"/>
-                            <constraint firstItem="4Ep-Pk-y0A" firstAttribute="leading" secondItem="xZq-Pb-gPB" secondAttribute="leadingMargin" id="xFi-ux-afS"/>
-                            <constraint firstItem="4Ep-Pk-y0A" firstAttribute="trailing" secondItem="xZq-Pb-gPB" secondAttribute="trailingMargin" id="zNe-By-HKD"/>
+                            <constraint firstItem="35l-SN-4KA" firstAttribute="leading" secondItem="xZq-Pb-gPB" secondAttribute="leadingMargin" id="3mB-gF-iYa"/>
+                            <constraint firstItem="S2R-Jl-RIc" firstAttribute="leading" secondItem="35l-SN-4KA" secondAttribute="leading" id="3pc-I3-uBb"/>
+                            <constraint firstItem="S2R-Jl-RIc" firstAttribute="leading" secondItem="jbp-Iu-bNn" secondAttribute="leading" id="AGP-SS-vzi"/>
+                            <constraint firstItem="S2R-Jl-RIc" firstAttribute="trailing" secondItem="35l-SN-4KA" secondAttribute="trailing" id="EoF-bS-0SG"/>
+                            <constraint firstItem="jbp-Iu-bNn" firstAttribute="top" secondItem="S2R-Jl-RIc" secondAttribute="bottom" constant="18" id="MPo-N8-Nja"/>
+                            <constraint firstItem="S2R-Jl-RIc" firstAttribute="trailing" secondItem="jbp-Iu-bNn" secondAttribute="trailing" id="U5A-Yj-2yx"/>
+                            <constraint firstItem="S2R-Jl-RIc" firstAttribute="top" secondItem="35l-SN-4KA" secondAttribute="bottom" constant="8" symbolic="YES" id="Uha-QW-Akd"/>
+                            <constraint firstItem="35l-SN-4KA" firstAttribute="top" secondItem="FGr-gt-Lre" secondAttribute="bottom" constant="39" id="jyX-9q-cPN"/>
+                            <constraint firstItem="35l-SN-4KA" firstAttribute="trailing" secondItem="xZq-Pb-gPB" secondAttribute="trailingMargin" id="vcZ-tL-X8J"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myImage" destination="5pH-hq-ssp" id="8MY-Hc-Yfq"/>
-                        <outlet property="myLabel1" destination="4Ep-Pk-y0A" id="MuL-mP-IxM"/>
-                        <outlet property="myLabel2" destination="LZ2-W0-5dr" id="CUw-jP-Aw0"/>
+                        <outlet property="myImage" destination="S2R-Jl-RIc" id="dCa-TS-dGt"/>
+                        <outlet property="myLabel1" destination="35l-SN-4KA" id="WbT-f5-S7s"/>
+                        <outlet property="myLabel2" destination="jbp-Iu-bNn" id="OGg-M6-iqU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4o-Cb-Fml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1754.4000000000001" y="948.57571214392806"/>
+            <point key="canvasLocation" x="-1755.072463768116" y="948.09782608695662"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Cards-->
         <scene sceneID="ePG-ig-VfF">
             <objects>
-                <viewController storyboardIdentifier="SVC2" title="CapitalOneApp" id="x1C-dA-rDg" customClass="SVC2" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SVC2" title="Cards" id="x1C-dA-rDg" customClass="SVC2" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pbc-b8-3A8"/>
                         <viewControllerLayoutGuide type="bottom" id="sNY-5e-t1q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LNf-24-cMS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select one of the cards below to see details." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6L-Lo-TFE" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="30" y="76" width="315" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select one of the Credit Cards below to see details." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-Kn-R99" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="34" y="93" width="346" height="79"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="HRS-Gp-d8v"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B4h-V0-Wgo">
-                                <rect key="frame" x="30" y="177" width="315" height="421"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNj-cf-iFe">
+                                <rect key="frame" x="34" y="191" width="346" height="421"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="421" id="LRM-vB-3YK"/>
-                                    <constraint firstAttribute="height" constant="421" id="fZI-6a-jhB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="421" id="Rr2-Q0-81n"/>
+                                    <constraint firstAttribute="height" constant="421" id="fnI-lJ-BKx"/>
                                 </constraints>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="x1C-dA-rDg" id="cux-Uc-nUf"/>
-                                    <outlet property="delegate" destination="x1C-dA-rDg" id="t2w-ze-k3y"/>
+                                    <outlet property="dataSource" destination="x1C-dA-rDg" id="zhR-d5-A4h"/>
+                                    <outlet property="delegate" destination="x1C-dA-rDg" id="ltL-4f-8Ue"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="o6L-Lo-TFE" secondAttribute="trailing" constant="14" id="97a-uL-L7P"/>
-                            <constraint firstItem="B4h-V0-Wgo" firstAttribute="top" secondItem="o6L-Lo-TFE" secondAttribute="bottom" constant="53" id="Bbh-b0-F0E"/>
-                            <constraint firstItem="sNY-5e-t1q" firstAttribute="top" secondItem="B4h-V0-Wgo" secondAttribute="bottom" constant="69" id="CoM-2W-h7w"/>
-                            <constraint firstItem="o6L-Lo-TFE" firstAttribute="leading" secondItem="LNf-24-cMS" secondAttribute="leadingMargin" constant="14" id="EKw-Fj-Gi8"/>
-                            <constraint firstItem="B4h-V0-Wgo" firstAttribute="leading" secondItem="o6L-Lo-TFE" secondAttribute="leading" id="Fpe-tn-nvw"/>
-                            <constraint firstItem="B4h-V0-Wgo" firstAttribute="centerX" secondItem="LNf-24-cMS" secondAttribute="centerX" id="Mxc-x9-cXa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="B4h-V0-Wgo" secondAttribute="trailing" constant="14" id="RxS-rx-ePI"/>
-                            <constraint firstItem="o6L-Lo-TFE" firstAttribute="centerX" secondItem="LNf-24-cMS" secondAttribute="centerX" id="ikQ-JI-Ha5"/>
+                            <constraint firstItem="RtN-Kn-R99" firstAttribute="leading" secondItem="LNf-24-cMS" secondAttribute="leadingMargin" constant="14" id="1Ym-S1-WB3"/>
+                            <constraint firstItem="oNj-cf-iFe" firstAttribute="centerX" secondItem="LNf-24-cMS" secondAttribute="centerX" id="eSI-Z6-U1X"/>
+                            <constraint firstItem="oNj-cf-iFe" firstAttribute="top" secondItem="RtN-Kn-R99" secondAttribute="bottom" constant="19" id="ebQ-i3-MSN"/>
+                            <constraint firstItem="RtN-Kn-R99" firstAttribute="top" secondItem="Pbc-b8-3A8" secondAttribute="bottom" constant="73" id="hid-ws-uBu"/>
+                            <constraint firstItem="RtN-Kn-R99" firstAttribute="trailing" secondItem="oNj-cf-iFe" secondAttribute="trailing" id="tB8-sE-ovE"/>
+                            <constraint firstItem="RtN-Kn-R99" firstAttribute="leading" secondItem="oNj-cf-iFe" secondAttribute="leading" id="xWv-9Y-FLN"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myLabel2" destination="o6L-Lo-TFE" id="LsK-Ph-m6R"/>
-                        <outlet property="myTableView" destination="B4h-V0-Wgo" id="U21-vc-0nZ"/>
+                        <outlet property="myLabel" destination="RtN-Kn-R99" id="evY-7D-irf"/>
+                        <outlet property="myTableView" destination="oNj-cf-iFe" id="Tb3-nd-EOo"/>
                         <segue destination="cOH-x5-dKe" kind="show" identifier="mySegue" id="tPF-NO-9qb">
                             <nil key="action"/>
                         </segue>
@@ -690,37 +732,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cvl-O3-0N8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248.8" y="-744.3778110944528"/>
+            <point key="canvasLocation" x="1246.376811594203" y="-745.10869565217399"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Card Info-->
         <scene sceneID="u3U-PO-vsu">
             <objects>
-                <viewController storyboardIdentifier="TVC2" title="CapitalOneApp" id="cOH-x5-dKe" customClass="TVC2" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TVC2" title="Card Info" id="cOH-x5-dKe" customClass="TVC2" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wni-PW-dmv"/>
                         <viewControllerLayoutGuide type="bottom" id="Gnu-q9-hOX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f1m-6E-5Nv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCI-dF-yf5" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="28" width="343" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMo-iz-706" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="374" height="69"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="2DH-P5-2Er"/>
-                                    <constraint firstAttribute="height" constant="69" id="Nyn-Qx-Jzf"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="69" id="gWl-d9-ubj"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="tJk-rC-6YV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="69" id="2qp-Fa-Ntn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="GX2-Kg-N1W"/>
+                                    <constraint firstAttribute="height" constant="69" id="dSH-9d-hmd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LD-c1-CJn" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="298" width="343" height="299"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KO5-qC-5xZ" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="161" width="374" height="197"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="299" id="VFd-Gr-NFc"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="299" id="dK4-yQ-Rpa"/>
+                                    <constraint firstAttribute="height" constant="197" id="spp-Kg-UlS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jL-90-0kK" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="376" width="374" height="326"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="326" id="Sph-Gf-oRi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -730,80 +801,54 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n1W-uq-ze3" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="105" width="343" height="197"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="Fns-r3-aPT"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="197" id="MI4-yb-4lB"/>
-                                    <constraint firstAttribute="height" constant="197" id="eZO-NW-SEg"/>
-                                    <constraint firstAttribute="width" constant="343" id="g1g-u3-PKz"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="leading" secondItem="f1m-6E-5Nv" secondAttribute="leadingMargin" id="0Mb-iX-0qF"/>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="leading" secondItem="7LD-c1-CJn" secondAttribute="leading" id="0vr-Jj-jNH"/>
-                            <constraint firstItem="7LD-c1-CJn" firstAttribute="centerX" secondItem="f1m-6E-5Nv" secondAttribute="centerX" id="3ya-U7-S9Z"/>
-                            <constraint firstItem="Gnu-q9-hOX" firstAttribute="top" secondItem="n1W-uq-ze3" secondAttribute="bottom" constant="365" id="58i-bm-buY"/>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="top" secondItem="KCI-dF-yf5" secondAttribute="bottom" constant="8" symbolic="YES" id="59h-Qv-jn4"/>
-                            <constraint firstItem="7LD-c1-CJn" firstAttribute="trailing" secondItem="f1m-6E-5Nv" secondAttribute="trailingMargin" id="5lO-cd-eDj"/>
-                            <constraint firstItem="KCI-dF-yf5" firstAttribute="trailing" secondItem="f1m-6E-5Nv" secondAttribute="trailingMargin" id="Bw6-KG-T5w"/>
-                            <constraint firstItem="KCI-dF-yf5" firstAttribute="centerX" secondItem="f1m-6E-5Nv" secondAttribute="centerX" id="EUt-Va-aLk"/>
-                            <constraint firstItem="7LD-c1-CJn" firstAttribute="leading" secondItem="f1m-6E-5Nv" secondAttribute="leadingMargin" id="Gmh-rc-93Q"/>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="trailing" secondItem="f1m-6E-5Nv" secondAttribute="trailingMargin" id="KjS-6P-rHn"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KCI-dF-yf5" secondAttribute="trailing" constant="16" id="NQ1-YR-9ul"/>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="leading" secondItem="KCI-dF-yf5" secondAttribute="leading" id="Sfq-3R-2uA"/>
-                            <constraint firstItem="KCI-dF-yf5" firstAttribute="leading" secondItem="f1m-6E-5Nv" secondAttribute="leadingMargin" id="UMr-Y5-zN4"/>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="trailing" secondItem="7LD-c1-CJn" secondAttribute="trailing" id="W4o-V4-n9k"/>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="leading" secondItem="f1m-6E-5Nv" secondAttribute="leadingMargin" id="b47-Zt-n5f"/>
-                            <constraint firstItem="n1W-uq-ze3" firstAttribute="centerX" secondItem="f1m-6E-5Nv" secondAttribute="centerX" id="b6v-CK-yTn"/>
-                            <constraint firstItem="Gnu-q9-hOX" firstAttribute="top" secondItem="7LD-c1-CJn" secondAttribute="bottom" constant="70" id="egQ-bn-ELj"/>
+                            <constraint firstItem="0jL-90-0kK" firstAttribute="centerX" secondItem="f1m-6E-5Nv" secondAttribute="centerX" id="26y-ET-OFM"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="top" secondItem="LMo-iz-706" secondAttribute="bottom" constant="8" symbolic="YES" id="57h-Ac-XIE"/>
+                            <constraint firstItem="Gnu-q9-hOX" firstAttribute="top" secondItem="0jL-90-0kK" secondAttribute="bottom" constant="34" id="FEX-5H-1Of"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="trailing" secondItem="LMo-iz-706" secondAttribute="trailing" id="SYb-wv-iLP"/>
+                            <constraint firstItem="LMo-iz-706" firstAttribute="centerX" secondItem="f1m-6E-5Nv" secondAttribute="centerX" id="Wfx-H8-hWl"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="centerX" secondItem="f1m-6E-5Nv" secondAttribute="centerX" id="dCc-WH-u6V"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="leading" secondItem="0jL-90-0kK" secondAttribute="leading" id="eIX-Cf-YFZ"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="trailing" secondItem="f1m-6E-5Nv" secondAttribute="trailingMargin" id="j8u-sR-hDK"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="leading" secondItem="LMo-iz-706" secondAttribute="leading" id="lXl-Rn-gdt"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="leading" secondItem="f1m-6E-5Nv" secondAttribute="leadingMargin" id="saH-jm-wOr"/>
+                            <constraint firstItem="KO5-qC-5xZ" firstAttribute="trailing" secondItem="0jL-90-0kK" secondAttribute="trailing" id="vuV-fG-YJx"/>
+                            <constraint firstItem="Gnu-q9-hOX" firstAttribute="top" secondItem="KO5-qC-5xZ" secondAttribute="bottom" constant="378" id="x5N-QE-55J"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myImage" destination="n1W-uq-ze3" id="iTt-fP-EBd"/>
-                        <outlet property="myLabel1" destination="KCI-dF-yf5" id="mpY-Z9-X6H"/>
-                        <outlet property="myLabel2" destination="7LD-c1-CJn" id="7ac-uB-gGi"/>
+                        <outlet property="myImage" destination="KO5-qC-5xZ" id="2c1-0h-9gi"/>
+                        <outlet property="myLabel1" destination="LMo-iz-706" id="dyV-Yx-P7A"/>
+                        <outlet property="myLabel2" destination="0jL-90-0kK" id="ldI-nX-OlR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAZ-Fm-O9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000.8" y="-743.47826086956525"/>
+            <point key="canvasLocation" x="2000.0000000000002" y="-743.47826086956525"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Customer-->
         <scene sceneID="4Xf-rk-lFV">
             <objects>
-                <viewController storyboardIdentifier="secondVC" title="CapitalOneApp" id="ecL-wj-Ijx" customClass="SecondViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondVC" title="Customer" id="ecL-wj-Ijx" customClass="SecondViewController" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H5c-8G-2UO"/>
                         <viewControllerLayoutGuide type="bottom" id="B4B-Ut-H5c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="via-w4-lkw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0Z-kQ-Ryq" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="191" width="243" height="227"/>
+                                <rect key="frame" x="70" y="191" width="274" height="227"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="fMF-yS-SHh"/>
@@ -821,7 +866,8 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mrs. Averagecredit Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0u-H7-CfU" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="449" width="243" height="38"/>
+                                <rect key="frame" x="70" y="449" width="274" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="bgd-MO-I4s"/>
                                 </constraints>
@@ -841,7 +887,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OD-7c-Cod" customClass="UIButtonX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="532" width="243" height="30"/>
+                                <rect key="frame" x="70" y="532" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.20748960969999999" green="0.76219296459999997" blue="0.08232159168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Check Prequalifications">
@@ -857,7 +903,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ad-eU-611" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="66" y="79" width="243" height="104"/>
+                                <rect key="frame" x="70" y="79" width="274" height="104"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="79" id="OUO-X4-syb"/>
@@ -883,83 +929,90 @@
                             <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="leading" secondItem="via-w4-lkw" secondAttribute="leadingMargin" constant="50" id="GpV-hP-xUu"/>
                             <constraint firstItem="6OD-7c-Cod" firstAttribute="leading" secondItem="a0u-H7-CfU" secondAttribute="leading" id="J9r-Dl-Dkl"/>
                             <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="leading" secondItem="7ad-eU-611" secondAttribute="leading" id="JNb-lx-DCK"/>
+                            <constraint firstItem="6OD-7c-Cod" firstAttribute="centerX" secondItem="via-w4-lkw" secondAttribute="centerX" id="KCW-rl-Qyg"/>
                             <constraint firstItem="a0u-H7-CfU" firstAttribute="leading" secondItem="via-w4-lkw" secondAttribute="leadingMargin" constant="50" id="LPD-jH-KTg"/>
                             <constraint firstItem="a0u-H7-CfU" firstAttribute="top" secondItem="q0Z-kQ-Ryq" secondAttribute="bottom" constant="31" id="Pga-sM-k4C"/>
+                            <constraint firstItem="7ad-eU-611" firstAttribute="centerX" secondItem="via-w4-lkw" secondAttribute="centerX" id="YKJ-hw-GaW"/>
+                            <constraint firstItem="a0u-H7-CfU" firstAttribute="centerX" secondItem="via-w4-lkw" secondAttribute="centerX" id="b9i-dd-KDU"/>
                             <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="top" secondItem="7ad-eU-611" secondAttribute="bottom" constant="8" symbolic="YES" id="d3H-0w-0k7"/>
                             <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="top" secondItem="H5c-8G-2UO" secondAttribute="bottom" constant="171" id="eVX-hj-rUW"/>
                             <constraint firstItem="6OD-7c-Cod" firstAttribute="trailing" secondItem="a0u-H7-CfU" secondAttribute="trailing" id="oRa-59-DS6"/>
                             <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="trailing" secondItem="a0u-H7-CfU" secondAttribute="trailing" id="seh-f9-Tod"/>
                             <constraint firstItem="6OD-7c-Cod" firstAttribute="top" secondItem="a0u-H7-CfU" secondAttribute="bottom" constant="45" id="ubU-ks-HuS"/>
+                            <constraint firstItem="q0Z-kQ-Ryq" firstAttribute="centerX" secondItem="via-w4-lkw" secondAttribute="centerX" id="yF2-2x-ryJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="6OD-7c-Cod" id="urD-oj-gSr"/>
                         <outlet property="myCapitalImage" destination="7ad-eU-611" id="hNx-ss-47n"/>
                         <outlet property="myImage" destination="q0Z-kQ-Ryq" id="TOb-tM-qig"/>
+                        <outlet property="myLabel" destination="a0u-H7-CfU" id="v5c-YA-GbU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tb9-7D-MAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477.60000000000002" y="-743.47826086956525"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Cards-->
         <scene sceneID="oqX-79-9MM">
             <objects>
-                <viewController storyboardIdentifier="SVC3" title="CapitalOneApp" id="CD3-Ul-iRW" customClass="SVC3" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SVC3" title="Cards" id="CD3-Ul-iRW" customClass="SVC3" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G6u-Pu-yBd"/>
                         <viewControllerLayoutGuide type="bottom" id="WOe-az-S3W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ABd-ik-QJk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select one of the cards below to see details." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG3-jn-ErQ" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="30.5" y="72" width="315" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select one of the Credit Cards below to see details." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQn-Ok-Ut1" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="34" y="109" width="346" height="79"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="ENP-6r-yla"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-qd-LTg">
-                                <rect key="frame" x="30.5" y="173" width="314" height="421"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j0z-Jz-Lho">
+                                <rect key="frame" x="34" y="207" width="346" height="421"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="421" id="4P7-bJ-eeQ"/>
-                                    <constraint firstAttribute="width" constant="314" id="PPc-8v-2iq"/>
-                                    <constraint firstAttribute="height" constant="421" id="dOY-TC-SIr"/>
+                                    <constraint firstAttribute="height" constant="421" id="a17-Sy-NLv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="421" id="hFI-zX-Lv5"/>
                                 </constraints>
-                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="CD3-Ul-iRW" id="ZTT-nK-lic"/>
-                                    <outlet property="delegate" destination="CD3-Ul-iRW" id="8ZI-1I-HW2"/>
+                                    <outlet property="dataSource" destination="CD3-Ul-iRW" id="Lcg-bt-UZT"/>
+                                    <outlet property="delegate" destination="CD3-Ul-iRW" id="zMe-AA-ItT"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wd8-qd-LTg" firstAttribute="leading" secondItem="SG3-jn-ErQ" secondAttribute="leading" id="5Kr-Ww-uCh"/>
-                            <constraint firstItem="wd8-qd-LTg" firstAttribute="centerX" secondItem="SG3-jn-ErQ" secondAttribute="centerX" id="EUy-es-xCS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wd8-qd-LTg" secondAttribute="trailing" constant="14" id="mU2-02-LF1"/>
-                            <constraint firstItem="wd8-qd-LTg" firstAttribute="leading" secondItem="ABd-ik-QJk" secondAttribute="leadingMargin" constant="14" id="oGQ-Hj-Z5z"/>
-                            <constraint firstItem="wd8-qd-LTg" firstAttribute="leading" secondItem="ABd-ik-QJk" secondAttribute="leadingMargin" constant="14" id="qwZ-iu-WV4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wd8-qd-LTg" secondAttribute="trailing" constant="14" id="ud7-wl-XD4"/>
-                            <constraint firstItem="SG3-jn-ErQ" firstAttribute="top" secondItem="G6u-Pu-yBd" secondAttribute="bottom" constant="52" id="w6Q-RV-aeE"/>
-                            <constraint firstItem="wd8-qd-LTg" firstAttribute="top" secondItem="SG3-jn-ErQ" secondAttribute="bottom" constant="53" id="ydw-rb-vL9"/>
-                            <constraint firstItem="wd8-qd-LTg" firstAttribute="centerX" secondItem="ABd-ik-QJk" secondAttribute="centerX" id="zyO-nB-hcX"/>
+                            <constraint firstItem="RQn-Ok-Ut1" firstAttribute="trailing" secondItem="j0z-Jz-Lho" secondAttribute="trailing" id="9jz-ZG-Ark"/>
+                            <constraint firstItem="j0z-Jz-Lho" firstAttribute="top" secondItem="RQn-Ok-Ut1" secondAttribute="bottom" constant="19" id="BLd-77-qz5"/>
+                            <constraint firstItem="RQn-Ok-Ut1" firstAttribute="leading" secondItem="j0z-Jz-Lho" secondAttribute="leading" id="Csy-QQ-5V3"/>
+                            <constraint firstItem="RQn-Ok-Ut1" firstAttribute="centerX" secondItem="ABd-ik-QJk" secondAttribute="centerX" id="WIq-pK-a34"/>
+                            <constraint firstItem="RQn-Ok-Ut1" firstAttribute="leading" secondItem="ABd-ik-QJk" secondAttribute="leadingMargin" constant="14" id="ibt-H7-MJp"/>
+                            <constraint firstItem="RQn-Ok-Ut1" firstAttribute="top" secondItem="G6u-Pu-yBd" secondAttribute="bottom" constant="89" id="pLg-Da-Y6O"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myLabel1" destination="SG3-jn-ErQ" id="NiD-F2-4gA"/>
-                        <outlet property="myTableView" destination="wd8-qd-LTg" id="GYQ-vt-M3E"/>
+                        <outlet property="myLabel" destination="RQn-Ok-Ut1" id="bZy-bT-zFG"/>
+                        <outlet property="myTableView" destination="j0z-Jz-Lho" id="RF9-Jh-mZO"/>
                         <segue destination="4BH-aj-f90" kind="show" identifier="mySegue" id="Cqa-0d-dYK"/>
                     </connections>
                 </viewController>
@@ -967,76 +1020,72 @@
             </objects>
             <point key="canvasLocation" x="-991" y="949"/>
         </scene>
-        <!--CapitalOneApp-->
+        <!--Cards-->
         <scene sceneID="Cao-bU-Lw6">
             <objects>
-                <viewController storyboardIdentifier="SVC4" title="CapitalOneApp" id="ewX-ux-xDh" customClass="SVC4" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SVC4" title="Cards" id="ewX-ux-xDh" customClass="SVC4" customModule="CCC_CapitalOneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FfK-hE-bAS"/>
                         <viewControllerLayoutGuide type="bottom" id="bYP-66-gcb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Ww-SO-ZWU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select one of the cards below to see details." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-ph-1qd" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
-                                <rect key="frame" x="30.5" y="72" width="315" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select one of the Credit Cards below to see details." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAS-95-FKx" customClass="UILabelX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
+                                <rect key="frame" x="34" y="109" width="346" height="79"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="b5h-2U-AXD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="value" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mwl-uO-pQX">
-                                <rect key="frame" x="30.5" y="173" width="314" height="421"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5k8-y8-iqZ">
+                                <rect key="frame" x="34" y="207" width="346" height="421"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="K66-Ya-ieu"/>
-                                    <constraint firstAttribute="height" constant="421" id="rI9-1S-6Eg"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="421" id="tNA-5D-Xkc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="421" id="ibX-WH-tRB"/>
+                                    <constraint firstAttribute="height" constant="421" id="yzI-Ne-WJh"/>
                                 </constraints>
-                                <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <sections/>
                                 <connections>
-                                    <outlet property="dataSource" destination="ewX-ux-xDh" id="esh-nA-4sq"/>
-                                    <outlet property="delegate" destination="ewX-ux-xDh" id="gET-CP-Ead"/>
+                                    <outlet property="dataSource" destination="ewX-ux-xDh" id="qLZ-Zl-7hX"/>
+                                    <outlet property="delegate" destination="ewX-ux-xDh" id="GR1-ky-GW9"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wK0-ph-1qd" firstAttribute="leading" secondItem="2Ww-SO-ZWU" secondAttribute="leadingMargin" constant="14" id="4Bj-pw-uwM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wK0-ph-1qd" secondAttribute="trailing" constant="14" id="D0r-8F-O2P"/>
-                            <constraint firstItem="Mwl-uO-pQX" firstAttribute="centerX" secondItem="wK0-ph-1qd" secondAttribute="centerX" id="LXG-Dr-C27"/>
-                            <constraint firstItem="wK0-ph-1qd" firstAttribute="centerX" secondItem="2Ww-SO-ZWU" secondAttribute="centerX" id="Rw3-ah-JiJ"/>
-                            <constraint firstItem="Mwl-uO-pQX" firstAttribute="leading" secondItem="2Ww-SO-ZWU" secondAttribute="leadingMargin" constant="14" id="Ttn-sW-Jfk"/>
-                            <constraint firstItem="wK0-ph-1qd" firstAttribute="leading" secondItem="2Ww-SO-ZWU" secondAttribute="leadingMargin" constant="14" id="X09-0J-flW"/>
-                            <constraint firstItem="Mwl-uO-pQX" firstAttribute="top" secondItem="wK0-ph-1qd" secondAttribute="bottom" constant="53" id="Ya6-VI-bhE"/>
-                            <constraint firstItem="wK0-ph-1qd" firstAttribute="top" secondItem="FfK-hE-bAS" secondAttribute="bottom" constant="52" id="ZEi-eu-F4a"/>
-                            <constraint firstItem="Mwl-uO-pQX" firstAttribute="centerX" secondItem="2Ww-SO-ZWU" secondAttribute="centerX" id="g7b-nU-kc4"/>
-                            <constraint firstItem="Mwl-uO-pQX" firstAttribute="centerX" secondItem="2Ww-SO-ZWU" secondAttribute="centerX" id="iXc-j8-Hgp"/>
-                            <constraint firstItem="Mwl-uO-pQX" firstAttribute="leading" secondItem="wK0-ph-1qd" secondAttribute="leading" id="mcn-Sm-zSa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mwl-uO-pQX" secondAttribute="trailing" constant="14" id="rsq-9Z-4rh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wK0-ph-1qd" secondAttribute="trailing" constant="14" id="vTy-n5-NY5"/>
-                            <constraint firstItem="Mwl-uO-pQX" firstAttribute="leading" secondItem="2Ww-SO-ZWU" secondAttribute="leadingMargin" constant="14" id="vaT-ul-85Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mwl-uO-pQX" secondAttribute="trailing" constant="14" id="vfo-1g-ylf"/>
+                            <constraint firstItem="5k8-y8-iqZ" firstAttribute="top" secondItem="ZAS-95-FKx" secondAttribute="bottom" constant="19" id="Dkw-69-xL4"/>
+                            <constraint firstItem="ZAS-95-FKx" firstAttribute="top" secondItem="FfK-hE-bAS" secondAttribute="bottom" constant="89" id="Iuy-Qm-ZU5"/>
+                            <constraint firstItem="ZAS-95-FKx" firstAttribute="leading" secondItem="5k8-y8-iqZ" secondAttribute="leading" id="N9k-PC-NQA"/>
+                            <constraint firstItem="ZAS-95-FKx" firstAttribute="leading" secondItem="2Ww-SO-ZWU" secondAttribute="leadingMargin" constant="14" id="dNm-aF-EFP"/>
+                            <constraint firstItem="ZAS-95-FKx" firstAttribute="centerX" secondItem="2Ww-SO-ZWU" secondAttribute="centerX" id="iAT-vh-NgN"/>
+                            <constraint firstItem="ZAS-95-FKx" firstAttribute="trailing" secondItem="5k8-y8-iqZ" secondAttribute="trailing" id="t80-cD-bsD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myLabel1" destination="wK0-ph-1qd" id="kiM-qs-H80"/>
-                        <outlet property="myTableView" destination="Mwl-uO-pQX" id="AuI-dO-zWb"/>
+                        <outlet property="myLabel" destination="ZAS-95-FKx" id="udX-U7-voG"/>
+                        <outlet property="myTableView" destination="5k8-y8-iqZ" id="t72-TO-v9G"/>
                         <segue destination="nwe-Xt-iaY" kind="show" identifier="mySegue" id="Cui-WA-TlA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FUI-99-rEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248.8" y="948.57571214392806"/>
+            <point key="canvasLocation" x="1247.8260869565217" y="948.09782608695662"/>
         </scene>
     </scenes>
 </document>

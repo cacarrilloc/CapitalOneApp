@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-protocol VMDelegate10:class{
+protocol VMDelegate11:class{
     func updateImage(image: UIImage)
 }
 
 class TVCModel4 {
     
-    weak var TVCModelViewController4:VMDelegate10?
+    weak var TVCModelViewController4:VMDelegate11?
     
-    init(delegateTVCModel4:VMDelegate10? = nil){
+    init(delegateTVCModel4:VMDelegate11? = nil){
         self.TVCModelViewController4 = delegateTVCModel4
     }
     
