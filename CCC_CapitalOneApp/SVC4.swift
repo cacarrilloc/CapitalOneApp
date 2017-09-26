@@ -20,7 +20,6 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var nameToPass:String?
     var descToPass:String?
     var imageToPass:String?
-    var cellCounter:Int = 0
     var currentImage:UIImage?
     var passedArray:[Product]?
     
@@ -45,11 +44,11 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-        cellCounter = cellCounter + 1
-        SVCViewModel4.getImage(urlIndex: indexPath.row, counter:cellCounter ) //Download Image (Api Call)
-        let name = SVCViewModel4.getName(index: indexPath.row)
-        guard let imageIn = currentImage else {return cell} // Receive Image
-        cell.fillCell(with: name, image: imageIn)
+        let name = SVCViewModel4.getName(index: indexPath.row) // Get Name
+        DispatchQueue.main.async {
+            let imageIn = self.SVCViewModel4.getImage(url:(self.SVCViewModel4.getImageUrl(index: indexPath.row)))
+            cell.fillCell(with: name, image: imageIn)
+        }
         return cell
     }
     
@@ -79,6 +78,7 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
 extension SVC4:VMDelegate8{
     func updateTableView(image: UIImage) {
         DispatchQueue.main.async {
+            // Display data
             self.currentImage = image
             self.myTableView.reloadData()
             self.myLabel.clipsToBounds = true

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol VMDelegate1:class{
-    func passQualifications(message:String)
+    func passQualifications(message:String, url:String)
 }
 
 class ViewModel1 {
@@ -26,8 +26,7 @@ class ViewModel1 {
     }
     
     func getUserInfo() {
-        let string = "SORRY. YOU DO NOT QUALIFY TO ANY OF OUR CREDIT CARDS."
-        firstViewController?.passQualifications(message: string)
+        let msg = "SORRY. YOU DO NOT QUALIFY TO ANY OF OUR CREDIT CARDS."
+        firstViewController?.passQualifications(message: msg, url: prequalificationUrl)
     }
-    
 }

@@ -35,6 +35,7 @@ class TVC2: UIViewController {
 extension TVC2:VMDelegate9{
     func updateImage(image: UIImage) {
         DispatchQueue.main.async {
+            // Display data
             self.myImage.image = image
             self.myLabel1.clipsToBounds = true
             self.myLabel2.clipsToBounds = true

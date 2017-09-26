@@ -47,7 +47,7 @@ class FirstViewController: UIViewController {
 }
 
 extension FirstViewController:VMDelegate1{
-    func passQualifications(message: String) {
+    func passQualifications(message: String, url: String) {
         DispatchQueue.main.async {
             self.myCapitalImage.image = #imageLiteral(resourceName: "capitalOne")
             self.myImage.image = #imageLiteral(resourceName: "MrBadcredit")

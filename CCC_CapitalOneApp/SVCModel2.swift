@@ -49,20 +49,21 @@ class SVCModel2 {
         return image[index]
     }
     
-    func getImage(urlIndex:Int, counter:Int) {
-        if counter <= getCounter() {
-            let url = getImageUrl(index: urlIndex)
-            if let image = ImageCache.shared.cache.object(forKey: url as NSString){
-                self.SVCModelViewController2?.updateTableView(image: image)
-            } else {
-                Networking.getImage(url: url){
-                    [unowned self] (error, data) in
-                    guard error == nil else {return}
-                    guard let dataIn = data else {return}
-                    self.SVCModelViewController2?.updateTableView(image: dataIn)
-                }
+    func getImage(url: String) -> UIImage {
+        var output:UIImage = #imageLiteral(resourceName: "sadFace")
+        if let image = ImageCache.shared.cache.object(forKey: url as NSString){
+            output = image
+            self.SVCModelViewController2?.updateTableView(image: image)
+        } else {
+            Networking.getImage(url: url){
+                [unowned self] (error, data) in
+                guard error == nil else {return}
+                guard let dataIn = data else {return}
+                output = dataIn
+                self.SVCModelViewController2?.updateTableView(image: dataIn)
             }
         }
+        return output
     }
 }
 

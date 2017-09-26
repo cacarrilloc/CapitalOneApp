@@ -57,11 +57,8 @@
                                 <rect key="frame" x="61" y="134" width="292" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="292" id="2sT-U0-V9C"/>
-                                    <constraint firstAttribute="height" constant="312" id="aSn-XT-6nc"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="312" id="dAX-jf-0WE"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="292" id="dUs-Lw-vQ9"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="257" id="ouP-ux-6Y6"/>
+                                    <constraint firstAttribute="height" constant="312" id="Zvi-T6-2pa"/>
+                                    <constraint firstAttribute="width" constant="292" id="jld-jI-Leb"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -79,8 +76,8 @@
                                 <rect key="frame" x="61" y="509" width="292" height="99"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="99" id="aR1-Wa-WPh"/>
-                                    <constraint firstAttribute="width" constant="292" id="iKP-1m-c7t"/>
+                                    <constraint firstAttribute="width" constant="292" id="2Kt-zk-j9R"/>
+                                    <constraint firstAttribute="height" constant="99" id="FGW-5D-a2j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -100,20 +97,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="7Pf-5w-2pz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" constant="41" id="C3e-Wt-lT7"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="Fsw-Cw-fS2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="v56-gS-fFx" secondAttribute="trailing" constant="41" id="JCc-2l-DWy"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="aOU-Gn-Mbx" secondAttribute="leading" id="Mjr-gi-Gwn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" constant="41" id="SlN-3J-BqE"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="VKh-0b-2TG"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="XpR-Pb-vvP"/>
-                            <constraint firstItem="BD3-fh-cx6" firstAttribute="top" secondItem="v56-gS-fFx" secondAttribute="bottom" constant="128" id="csl-mg-fbT"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="flz-B6-VnY"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="top" secondItem="dNf-1u-M8L" secondAttribute="bottom" constant="114" id="lNw-SQ-Bpa"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="trailing" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" id="q3C-Dx-Z9t"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="top" secondItem="aOU-Gn-Mbx" secondAttribute="bottom" constant="63" id="wDt-Jm-2Qw"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="yY1-We-lrx"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="GVX-8g-HqV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v56-gS-fFx" secondAttribute="trailing" constant="41" id="QfQ-HF-fMq"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="aMz-j9-eBA"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="top" secondItem="dNf-1u-M8L" secondAttribute="bottom" constant="114" id="amF-b3-qAs"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="top" secondItem="aOU-Gn-Mbx" secondAttribute="bottom" constant="63" id="bM0-4w-wmL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" constant="41" id="cO3-9T-p7f"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="kmI-Kr-yXb"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="nl0-5R-G2J"/>
                         </constraints>
                     </view>
                     <connections>

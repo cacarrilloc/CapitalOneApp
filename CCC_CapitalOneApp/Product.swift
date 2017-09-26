@@ -30,9 +30,7 @@ extension ProductError:LocalizedError {
     }
 }
 
-
 class Product {
-    
     let displayName:String
     var images:[ProductImage]?
     let description:MarketingCopy
@@ -82,14 +80,11 @@ class ProductImage {
 
 
 class MarketingCopy {
-    
     let description:String
     let additionalDescription:String?
     
     init?(copy:[String]?, additional:[String]?) {
-        guard let description = copy?.joined(separator: "\n") else {
-            return nil
-        }
+        guard let description = copy?.joined(separator: "\n") else {return nil}
         self.description = description
         self.additionalDescription = additional?.joined(separator: "\n")
     }
@@ -116,38 +111,6 @@ class MarketingCopy {
 
 
 
-/*
-class Product2 {
-    
-    let displayName:[String]
-    var description:[String]
-    var additionaDesc:[String]
-    var imageUrl:[String] = []
-    
-    init(dict:[[String:Any]])throws {
-        
-        // Card Types
-        let cardNames:[String] = dict.flatMap{return $0["productDisplayName"] as? String}
-        self.displayName = cardNames
-        
-        // Card Related Info
-        let copy:[String] = dict.flatMap{return ($0["marketingCopy"] as? [String])!.joined(separator: "\n")}
-        self.description = copy
-        
-        let additionalCopy:[String] = dict.flatMap{return ($0["additionalMarketingCopy"] as? [String])!.joined(separator: "\n")}
-        self.additionaDesc = additionalCopy
-        
-        // Card Images
-        for index in dict {
-            let current1 = index["images"] as? [[String:Any]]
-            for index2 in current1! {
-                let current2 = (index2["url"] as? String)!
-                imageUrl.append(current2)
-            }
-        }
-    }
-}
- 
-*/
+
 
 

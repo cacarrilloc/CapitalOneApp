@@ -20,11 +20,8 @@ class SVC3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var nameToPass:String?
     var descToPass:String?
     var imageToPass:String?
-    var cellCounter:Int = 0
     var currentImage:UIImage?
     var passedArray:[Product]?
-    
-    //let images = [#imageLiteral(resourceName: "card1"), #imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card1")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +44,11 @@ class SVC3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-        cellCounter = (cellCounter + 1)
-        SVCViewModel3.getImage(urlIndex: indexPath.row, counter: cellCounter ) //Download Image (Api Call)
-        let name = SVCViewModel3.getName(index: indexPath.row)
-        guard let imageIn = currentImage else {return cell} // Receive Image
-        cell.fillCell(with: name, image: imageIn)
+        let name = SVCViewModel3.getName(index: indexPath.row) // Get Name
+        DispatchQueue.main.async {
+            let imageIn = self.SVCViewModel3.getImage(url:(self.SVCViewModel3.getImageUrl(index: indexPath.row)))
+            cell.fillCell(with: name, image: imageIn)
+        }
         return cell
     }
     
@@ -81,9 +78,10 @@ class SVC3: UIViewController, UITableViewDelegate, UITableViewDataSource {
 extension SVC3:VMDelegate7{
     func updateTableView(image: UIImage) {
         DispatchQueue.main.async {
+            // Display data
             self.currentImage = image
             self.myTableView.reloadData()
-             self.myLabel.clipsToBounds = true
+            self.myLabel.clipsToBounds = true
             
             // Backgroud Image
             let background = UIImage(named: "capitalOne2")
