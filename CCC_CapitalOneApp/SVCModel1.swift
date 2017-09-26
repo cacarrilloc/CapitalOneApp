@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+import CoreData
 import UIKit
 
 protocol VMDelegate5:class{

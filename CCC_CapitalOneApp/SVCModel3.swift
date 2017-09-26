@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+import CoreData
 import UIKit
 
 protocol VMDelegate7:class{
@@ -14,7 +16,6 @@ protocol VMDelegate7:class{
 }
 
 class SVCModel3 {
-    
     weak var SVCModelViewController3:VMDelegate7?
     var masterArray:[Product]?
     
@@ -49,8 +50,9 @@ class SVCModel3 {
         return image[index]
     }
     
-    func getImage(url: String) -> UIImage {
+    func getImage(urlIndex: Int) -> UIImage {
         var output:UIImage = #imageLiteral(resourceName: "sadFace")
+        let url = getImageUrl(index: urlIndex)
         if let image = ImageCache.shared.cache.object(forKey: url as NSString){
             output = image
             self.SVCModelViewController3?.updateTableView(image: image)

@@ -6,8 +6,10 @@
 //  Copyright © 2017 Carlos Carrillo. All rights reserved.
 //
 
-import Foundation
-import UIKit
+ import Foundation
+ import Alamofire
+ import CoreData
+ import UIKit
 
 class FirstViewController: UIViewController {
     

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 import CoreData
 import UIKit
 
@@ -45,10 +46,8 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
         let name = SVCViewModel4.getName(index: indexPath.row) // Get Name
-        DispatchQueue.main.async {
-            let imageIn = self.SVCViewModel4.getImage(url:(self.SVCViewModel4.getImageUrl(index: indexPath.row)))
-            cell.fillCell(with: name, image: imageIn)
-        }
+        let imageIn = self.SVCViewModel4.getImage(urlIndex: indexPath.row)
+        cell.fillCell(with: name, image: imageIn)
         return cell
     }
     

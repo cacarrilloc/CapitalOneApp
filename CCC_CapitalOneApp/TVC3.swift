@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+import CoreData
 import UIKit
 
 class TVC3: UIViewController {
