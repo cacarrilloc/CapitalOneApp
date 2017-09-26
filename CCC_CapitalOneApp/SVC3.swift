@@ -45,8 +45,8 @@ class SVC3: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-        let name = SVCViewModel3.getName(index: indexPath.row) // Get Name
-        let imageIn = self.SVCViewModel3.getImage(urlIndex: indexPath.row)
+        let name = SVCViewModel3.getName(index: indexPath.row) 
+        let imageIn = self.SVCViewModel3.getImage(index: indexPath.row)
         cell.fillCell(with: name, image: imageIn)
         return cell
     }

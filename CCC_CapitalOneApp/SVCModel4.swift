@@ -25,6 +25,13 @@ class SVCModel4 {
     
     func getMasterArray(array: [Product]) {
         masterArray = array.flatMap{$0}
+        downloadImages()
+    }
+    
+    func downloadImages(){
+        for index in 0..<getCounter(){
+            callImageApi(urlIndex: index)
+        }
     }
     
     func getCounter() -> Int {
@@ -50,22 +57,27 @@ class SVCModel4 {
         return image[index]
     }
     
-    func getImage(urlIndex: Int) -> UIImage {
-        var output:UIImage = #imageLiteral(resourceName: "sadFace")
+    func getImage(index:Int) -> UIImage {
+        let url = getImageUrl(index: index)
+        if let image = ImageCache.shared.cache.object(forKey: url as NSString){
+            return image
+        } else {
+            return #imageLiteral(resourceName: "sadFace")
+        }
+    }
+    
+    func callImageApi(urlIndex: Int) {
         let url = getImageUrl(index: urlIndex)
         if let image = ImageCache.shared.cache.object(forKey: url as NSString){
-            output = image
             self.SVCModelViewController4?.updateTableView(image: image)
         } else {
             Networking.getImage(url: url){
                 [unowned self] (error, data) in
                 guard error == nil else {return}
                 guard let dataIn = data else {return}
-                output = dataIn
                 self.SVCModelViewController4?.updateTableView(image: dataIn)
             }
         }
-        return output
     }
 }
 

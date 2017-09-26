@@ -21,7 +21,7 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var nameToPass:String?
     var descToPass:String?
     var imageToPass:String?
-    var currentImage:UIImage?
+    var currentImage:UIImage = #imageLiteral(resourceName: "capitalOne")
     var passedArray:[Product]?
     
     override func viewDidLoad() {
@@ -45,8 +45,8 @@ class SVC4: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.myTableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-        let name = SVCViewModel4.getName(index: indexPath.row) // Get Name
-        let imageIn = self.SVCViewModel4.getImage(urlIndex: indexPath.row)
+        let name = SVCViewModel4.getName(index: indexPath.row)
+        let imageIn = self.SVCViewModel4.getImage(index: indexPath.row)
         cell.fillCell(with: name, image: imageIn)
         return cell
     }

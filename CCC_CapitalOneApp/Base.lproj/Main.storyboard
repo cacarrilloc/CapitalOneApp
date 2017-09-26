@@ -56,10 +56,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aOU-Gn-Mbx" customClass="UIImageViewX" customModule="CCC_CapitalOneApp" customModuleProvider="target">
                                 <rect key="frame" x="61" y="134" width="292" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="312" id="Zvi-T6-2pa"/>
-                                    <constraint firstAttribute="width" constant="292" id="jld-jI-Leb"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,8 +72,7 @@
                                 <rect key="frame" x="61" y="509" width="292" height="99"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="292" id="2Kt-zk-j9R"/>
-                                    <constraint firstAttribute="height" constant="99" id="FGW-5D-a2j"/>
+                                    <constraint firstAttribute="height" constant="99" id="yKm-ax-wLe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -97,14 +92,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="GVX-8g-HqV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="v56-gS-fFx" secondAttribute="trailing" constant="41" id="QfQ-HF-fMq"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="aMz-j9-eBA"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="top" secondItem="dNf-1u-M8L" secondAttribute="bottom" constant="114" id="amF-b3-qAs"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="top" secondItem="aOU-Gn-Mbx" secondAttribute="bottom" constant="63" id="bM0-4w-wmL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" constant="41" id="cO3-9T-p7f"/>
-                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="kmI-Kr-yXb"/>
-                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="nl0-5R-G2J"/>
+                            <constraint firstItem="aOU-Gn-Mbx" firstAttribute="top" secondItem="dNf-1u-M8L" secondAttribute="bottom" constant="114" id="3PG-ad-WIp"/>
+                            <constraint firstItem="BD3-fh-cx6" firstAttribute="top" secondItem="v56-gS-fFx" secondAttribute="bottom" constant="128" id="MQU-JD-VTJ"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="centerX" secondItem="XcL-t9-9n8" secondAttribute="centerX" id="WhQ-Ri-9cy"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="XcL-t9-9n8" secondAttribute="leadingMargin" constant="41" id="ekP-2G-P6k"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="top" secondItem="aOU-Gn-Mbx" secondAttribute="bottom" constant="63" id="fRa-ti-6Aj"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="trailing" secondItem="aOU-Gn-Mbx" secondAttribute="trailing" id="jLT-wB-fQC"/>
+                            <constraint firstItem="v56-gS-fFx" firstAttribute="leading" secondItem="aOU-Gn-Mbx" secondAttribute="leading" id="wV7-9g-b01"/>
                         </constraints>
                     </view>
                     <connections>
